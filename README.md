@@ -240,7 +240,9 @@
 </head>
 <body>
   <div class="container">
-    <h1 style="color: #050505; font-size: 64px; font-weight: bold;">PTag <span style="color: #65A8FB; font-weight: bold;">Air</span> 五大功能</h1>
+    <h1 style="color: #050505; font-size: 64px; font-weight: bold;">
+        PTag <span style="color: #65A8FB; font-weight: bold;">Air</span> <span style="color: #65A8FB;">五</span>大功能
+    </h1>
 </div>
     <div class="features">
         <div class="feature">
