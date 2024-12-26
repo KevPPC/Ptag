@@ -190,6 +190,90 @@
 </div>
 <!-- // End AI Eye Disease Check Section // -->
 
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F7F7F7;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        .features {
+            display: flex; /* Use flexbox to arrange items horizontally */
+            justify-content: space-around; /* Space items evenly */
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        }
+        .feature {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 180px; /* Set a fixed width for each feature */
+            margin: 10px; /* Margin around each feature */
+            text-align: center;
+        }
+        .feature img {
+            width: 50px; /* Adjust icon size */
+            height: 50px; /* Adjust icon size */
+            margin-bottom: 15px;
+        }
+        .feature h2 {
+            font-size: 1.2em; /* Adjust heading size */
+            margin: 10px 0;
+        }
+        .feature p {
+            margin: 0;
+            font-size: 0.9em; /* Adjust font size for better readability */
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="color: #050505; font-size: 64px; font-weight: bold;">PTag <span style="color: #65A8FB; font-weight: bold;">Air</span> 五大功能</h1>
+</div>
+    <div class="features">
+        <div class="feature">
+            <img src="instagram icon.jpeg" alt="功能1">
+            <h2>智能診斷</h2>
+            <p>PTag 能夠快速診斷，提供準確的健康建議。</p>
+        </div>
+        <div class="feature">
+            <img src="instagram icon.jpeg" alt="功能2">
+            <h2>定點記錄</h2>
+            <p>可記錄特定時間的健康數據。</p>
+        </div>
+        <div class="feature">
+            <img src="instagram icon.jpeg" alt="功能3">
+            <h2>自動圖片</h2>
+            <p>透過自動拍攝功能，輕鬆獲取健康圖像。</p>
+        </div>
+        <div class="feature">
+            <img src="instagram icon.jpeg" alt="功能4">
+            <h2>數據管理</h2>
+            <p>便捷管理所有健康數據，隨時查看。</p>
+        </div>
+        <div class="feature">
+            <img src="instagram icon.jpeg" alt="功能5">
+            <h2>社交媒體整合</h2>
+            <p>可連接 Facebook 和 Instagram，分享健康成果。</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
 <!-- // End Contact Section // -->
 			<!--div class="Services_sec">
 			<! Begin Pricing Section-->
