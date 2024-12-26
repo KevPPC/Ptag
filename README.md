@@ -156,10 +156,17 @@
             <!-- \\ Begin About Section \\ -->
             <div class="HowToUse_sec" id="about">
                 <div class="Center">            
-				<h2><span><font color="#000000">PTag </font><font color="#65A8FB">Air</font></span><span>
-				    <br> <font color="black">僅重 3 克，輕巧如羽，是一般寵物牌重量的五分之一。舒適貼合，讓愛寵自在活動。耐用塑膠材質，免除氧化困擾。內建 QR Code 及寵物照片，走失即時定位。更搭載 PHealth 智慧健康管理，輕鬆守護愛寵健康
-				    </font></span></h2>
-
+                  <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 20px;">
+                    <span style="color: #000000;">PTag </span>
+                    <span style="color: #65A8FB;">Air</span>
+                </h2>
+                <p style="text-align: center; font-size: 1.2em; color: black; line-height: 1.6;">
+                    • 僅重 3 克，輕巧如羽，是一般寵物牌重量的五分之一。<br>
+                    • 舒適貼合，讓愛寵自在活動。<br>
+                    • 耐用塑膠材質，免除氧化困擾。<br>
+                    • 內建 QR Code 及寵物照片，走失即時定位。<br>
+                    • 更搭載 PHealth 智慧健康管理，輕鬆守護愛寵健康。
+                </p>
                 </div>
             </div>
 			<!--div class="Services_sec">
