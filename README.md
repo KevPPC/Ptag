@@ -54,6 +54,9 @@
         .Bar{
           background-color: black;
          }
+         .HowToUse_sec{
+          background-color: #E6EEFD ;
+         }
          
 	</style>
     
@@ -169,6 +172,25 @@
                 </p>
                 </div>
             </div>
+        <!-- // End Services Section // -->		
+
+<!-- \\ Begin AI Eye Disease Check Section \\ -->
+<div class="HowToUse_sec" id="eye-check" style="background-color: #E6EEFD;">
+  <div class="Center">
+    <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 20px; color: #000000; font-weight: bold; background-color: #E6EEFD;">
+      為何有 AI 眼疾病查？
+    </h2>
+    <p style="text-align: center; font-size: 1.2em; color: black; line-height: 1.6; background-color: #E6EEFD;">
+      智能科技的快速進步使得眼病的診斷變得更加精確。<br>
+      這項技術不僅能夠提高診斷的準確性，還要求專業人士一同參與以確保診斷的正確性。<br>
+      PTag 的 AI 眼疾病查詢，只需簡單的檢測過程，立即獲得健康報告，讓您輕鬆掌握健康狀態。
+    </p>
+    <p style="font-size: 16px; background-color: #E6EEFD;">**此健康篩查及建議僅供參考，無法替代專業獸醫意見。請諮詢您的主診獸醫**</p>
+  </div>
+</div>
+<!-- // End AI Eye Disease Check Section // -->
+
+<!-- // End Contact Section // -->
 			<!--div class="Services_sec">
 			<! Begin Pricing Section-->
         <!--div class="HowToUse_sec" id="pricing" style="background-image: url(../img/Pricing_background.jpg);">
