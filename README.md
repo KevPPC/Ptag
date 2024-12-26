@@ -57,7 +57,61 @@
          .HowToUse_sec{
           background-color: #E6EEFD ;
          }
-         
+       
+       
+
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #F7F7F7;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1920px; /* Adjust max-width for overall layout */
+    }
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 40px;
+        color: #333;
+    }
+    .features {
+        display: flex; /* Use flexbox to arrange items horizontally */
+        justify-content: space-between; /* Space items evenly */
+        flex-wrap: nowrap; /* Prevent wrapping */
+        gap: 24px; /* Set gap between items */
+    }
+    .feature {
+        background-color: white;
+        border-radius: 24px; /* Updated border radius */
+        padding: 32px; /* Updated padding */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 244px; /* Set width */
+        height: 261px; /* Set height */
+        text-align: center;
+        transition: transform 0.2s; /* Add a hover effect */
+    }
+    .feature:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+    }
+    .feature img {
+        width: 60px; /* Adjust icon size */
+        height: 60px; /* Adjust icon size */
+        margin-bottom: 15px;
+    }
+    .feature h2 {
+        font-size: 1.2em; /* Adjust heading size for prominence */
+        margin: 10px 0;
+        font-weight: bold; /* Make the heading bold */
+    }
+    .feature p {
+        margin: 0;
+        font-size: 0.9em; /* Adjust font size for better readability */
+        color: #666;
+    }
+
 	</style>
     
 	<!--script src="/js/jquery-2.1.4.js"></script-->
@@ -191,241 +245,178 @@
 <!-- // End AI Eye Disease Check Section // -->
 
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #F7F7F7;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            text-align: center;
-            margin: 0 auto;
-            max-width: 1200px;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 40px;
-            color: #333;
-        }
-        .features {
-            display: flex; /* Use flexbox to arrange items horizontally */
-            justify-content: space-around; /* Space items evenly */
-            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-        }
-        .feature {
-            background-color: white;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            width: 180px; /* Set a fixed width for each feature */
-            margin: 10px; /* Margin around each feature */
-            text-align: center;
-        }
-        .feature img {
-            width: 50px; /* Adjust icon size */
-            height: 50px; /* Adjust icon size */
-            margin-bottom: 15px;
-        }
-        .feature h2 {
-            font-size: 1.2em; /* Adjust heading size */
-            margin: 10px 0;
-        }
-        .feature p {
-            margin: 0;
-            font-size: 0.9em; /* Adjust font size for better readability */
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-  <div class="container">
-    <h1 style="color: #050505; font-size: 64px; font-weight: bold;">
-        PTag <span style="color: #65A8FB; font-weight: bold;">Air</span> <span style="color: #65A8FB;">五</span>大功能
-    </h1>
-</div>
-    <div class="features">
-        <div class="feature">
-            <img src="instagram icon.jpeg" alt="功能1">
-            <h2>智能診斷</h2>
-            <p>PTag 能夠快速診斷，提供準確的健康建議。</p>
-        </div>
-        <div class="feature">
-            <img src="instagram icon.jpeg" alt="功能2">
-            <h2>定點記錄</h2>
-            <p>可記錄特定時間的健康數據。</p>
-        </div>
-        <div class="feature">
-            <img src="instagram icon.jpeg" alt="功能3">
-            <h2>自動圖片</h2>
-            <p>透過自動拍攝功能，輕鬆獲取健康圖像。</p>
-        </div>
-        <div class="feature">
-            <img src="instagram icon.jpeg" alt="功能4">
-            <h2>數據管理</h2>
-            <p>便捷管理所有健康數據，隨時查看。</p>
-        </div>
-        <div class="feature">
-            <img src="instagram icon.jpeg" alt="功能5">
-            <h2>社交媒體整合</h2>
-            <p>可連接 Facebook 和 Instagram，分享健康成果。</p>
-        </div>
-    </div>
+
+
+</style>
+<div class="container">
+  <h1 style="color: #050505; font-size: 64px; font-weight: bold;">
+    PTag <span style="color: #65A8FB; font-weight: bold;">Air 五</span>大功能
+</h1>
+  <div class="features">
+      <div class="feature">
+          <img src="instagram icon.jpeg" alt="Feature 1">
+          <h2>特別設計</h2>
+          <p>PTag Air 具備 QR Code 功能，方便您隨時使用。</p>
+      </div>
+      <div class="feature">
+          <img src="instagram icon.jpeg" alt="Feature 2">
+          <h2>安全資訊</h2>
+          <p>所有資料均為加密保存，保障您的隱私。</p>
+      </div>
+      <div class="feature">
+          <img src="instagram icon.jpeg" alt="Feature 3">
+          <h2>自訂圖片</h2>
+          <p>可上載您喜愛的圖片，個性化您的 PTag。</p>
+      </div>
+      <div class="feature">
+          <img src="instagram icon.jpeg" alt="Feature 4">
+          <h2>社交媒體連結</h2>
+          <p>連結 Facebook 和 Instagram，輕鬆分享。</p>
+      </div>
+      <div class="feature">
+          <img src="instagram icon.jpeg" alt="Feature 5">
+          <h2>即時更新</h2>
+          <p>隨時更新您的信息，保持最新狀態。</p>
+      </div>
+  </div>
 </div>
 
-</body>
-</html>
 
 <!-- // End Contact Section // -->
 			<!--div class="Services_sec">
-			<! Begin Pricing Section-->
-        <!--div class="HowToUse_sec" id="pricing" style="background-image: url(../img/Pricing_background.jpg);">
-            <div class="Center">
-                <h2>為何有 AI 眼疾篩查 ? (特選客戶)
-                <br>
-                <span><font color="black">寵物很多時候無法表達身體不適，但牠們會透過一些細微的徵狀或疾病先兆來反映。然而，大部分主人難以察覺，結果導致一些原本可以預防的疾病發生。眼疾便是其中一種常見的寵物疾病。
-                        <br>PTag 的 AI 眼疾篩查技術，只需手機拍攝，即可評估健康風險及早發現問題，減少醫療費用，提供貼心護理建議。</font>
-                    <br><p style="font-size:15px;color:#79a9db">**此健康篩查及建議僅供參考，無法替代專業獸醫意見。請諮詢您的主診獸醫**</p></span>
-                    </h2>
-            </div>
-        </div-->
-		<!-- // End Pricing Section // -->
-		
-            <div class="Center">
+		<!-- // End Contact Section // -->
+    <div class="Services_sec" id="services">
+      <div class="Center">
+          <div class="Tabside">
+            <h1 style="color: #050505; font-size: 64px; font-weight: bold;">
+                PTag <span style="color: #65A8FB; font-weight: bold;">Air</span> <span style="color: #65A8FB;">五</span>大功能
+            </h1>
+              <ul>
+                <li>
+                    <a href="javascript:;" class="tabLink activeLink" id="cont-1"><i class="fa fa-leaf fa-5x" aria-hidden="true"></i><br>
+                        <div class="feature">
+                            <img src="instagram icon.jpeg" alt="功能1">
+                            <h2>智能診斷</h2>
+                            <p>PTag 能夠快速診斷，提供準確的健康建議。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="tabLink" id="cont-2"><i class="fa fa-map-marker fa-5x" aria-hidden="true"></i><br>
+                        <div class="feature">
+                            <img src="instagram icon.jpeg" alt="功能2">
+                            <h2>定點記錄</h2>
+                            <p>可記錄特定時間的健康數據。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="tabLink" id="cont-4"><i class="fa fa-picture-o fa-5x" aria-hidden="true"></i><br>
+                        <div class="feature">
+                            <img src="instagram icon.jpeg" alt="功能3">
+                            <h2>自動圖片</h2>
+                            <p>透過自動拍攝功能，輕鬆獲取健康圖像。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="tabLink" id="cont-5"><i class="fa fa-database fa-5x" aria-hidden="true"></i><br>
+                        <div class="feature">
+                            <img src="instagram icon.jpeg" alt="功能4">
+                            <h2>數據管理</h2>
+                            <p>便捷管理所有健康數據，隨時查看。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="tabLink" id="cont-6"><i class="fa fa-share-square-o fa-5x" aria-hidden="true"></i><br>
+                        <div class="feature">
+                            <img src="instagram icon.jpeg" alt="功能5">
+                            <h2>社交媒體整合</h2>
+                            <p>可連接 Facebook 和 Instagram，分享健康成果。</p>
+                        </div>
+                    </a>
+                </li>
+              </ul>
+              <div class="clear"></div>
+              <div class="tabcontent" id="cont-1-1">
+                  <div class="Description">
+                      <div class="Center">
+                          <h3>輕巧設計</h3>
+                          <br>
+                      </div>
+                      <h3>
+                          <ul class="fa-ul">
+                              <li><span>PTag Air 僅重約 3 克，讓您的愛寵自在活動<br><br></span></li>
+                          </ul>
+                      </h3>
+                  </div>
+              </div>
+              <div class="tabcontent hide" id="cont-2-1">
+                  <div class="Description">
+                      <div class="Center">
+                          <h3>位置定位</h3>
+                          <br>
+                      </div>
+                      <h3>
+                          <ul class="fa-ul">
+                              <li><span>寵物走失，掃描PTag上的QR Code，即時提供寵物位置及資料<br><br></span></li>
+                          </ul>
+                      </h3>
+                  </div>
+              </div>
+              <div class="tabcontent hide" id="cont-4-1">
+                  <div class="Description">
+                      <div class="Center">
+                          <h3>自訂照片</h3>
+                      </div>
+                      <h3>
+                          <ul class="fa-ul">
+                              <li><span>不只是刻字，PTag 還能刻上您喜愛的照片. 光線下，展現經典黑白影像</span><br></li>
+                          </ul>
+                      </h3>
+                  </div>
+              </div>
+              <div class="tabcontent hide" id="cont-5-1">
+                  <div class="Description">
+                      <div class="Center">
+                          <h3>智慧健康管理</h3>
+                      </div>
+                      <h3>
+                          <ul class="fa-ul">
+                              <li><span>三步輕鬆註冊，全面記錄寵物資料掃描 QR Code，即時查看健康狀況及聯絡方法</span><br><br><br></li>
+                          </ul>
+                      </h3>
+                  </div>
+              </div>
+              <div class="tabcontent hide" id="cont-6-1">
+                  <div class="Description">
+                      <div class="Center">
+                          <h3>社交媒體尋寵</h3>
+                      </div>
+                      <h3>
+                          <ul class="fa-ul">
+                              <li><span>連結 Facebook 及 Instagram 千人協尋群組，即時傳遞訊息，幫你快啲搵返愛寵</span><br></li>
+                          </ul>
+                      </h3>
+                  </div>
+              </div>
+              <div class="clear"></div>
+          </div>                    
+      </div>                
+  </div>
+<!-- // End Services Section // -->
 
-			</div>
-		
-			<!--div class="About_sec" id="about">
-                <div class="Center">            	
-                    <h2>PTag的重要性<span><br>關懷，就是能為你的愛寵提供即時身份識別。只要用手機掃一下，便立即得知最完整的聯絡方法，任何人都能協助愛寵回家。若果寵物走失時只植有晶片，必須要有人專程帶他到有掃描器的寵物店/獸醫掃描，當中晶片有機會走位及未能識別的狀況，相信大家也時有所聞。</span><br></h2><br>
-                </div>
-            </div-->
-            <!-- // End About Section // -->
-        <!-- \\ Begin Services Section \\ -->
-        <div class="Services_sec" id="services">
-            <div class="Center">
-			<h2><font color="#000000">PTag </font><font color="#79a9db">Air</font> 五大功能</h2>
-			<!--div class="Line"></div-->
-				<!-- \\ Begin Tab side \\ -->
-                    <div class="Tabside">
-                        <ul>
-                            <li><a href="javascript:;" class="tabLink activeLink" id="cont-1"><i class="fa fa-leaf fa-5x" aria-hidden="true"></i><br>輕巧設計</a></li>
-                            <li><a href="javascript:;" class="tabLink" id="cont-2"><i class="fa fa-map-marker fa-5x" aria-hidden="true"></i><br>定位功能</a></li>
-							<!--li><a href="javascript:;" class="tabLink" id="cont-3"><i class="fa fa-eye fa-5x" aria-hidden="true"></i><br>眼疾篩查 </a></li-->
-                            <li><a href="javascript:;" class="tabLink" id="cont-4"><i class="fa fa-picture-o fa-5x" aria-hidden="true"></i><br>自訂照片</a></li>
-							<li><a href="javascript:;" class="tabLink" id="cont-5"><i class="fa fa-database fa-5x" aria-hidden="true"></i><br>智慧健康管理</a></li>
-							<li><a href="javascript:;" class="tabLink" id="cont-6"><i class="fa fa-share-square-o fa-5x" aria-hidden="true"></i><br>社交媒體尋寵</a></li>
-                        </ul>
-                    <div class="clear"></div>
-                        <div class="tabcontent" id="cont-1-1">
-							<div class="Description">
-								<div class="Center">
-									<h3>輕巧設計</h3>
-									<br>
-								</div>
-								<h3>
-									<ul class="fa-ul">
-										<li><span>
-											PTag Air 僅重約 3 克，讓您的愛寵自在活動<br><br></span>
-										</li>
-									</ul>
-								</h3>
-                            </div>
-                        </div>
-                        <div class="tabcontent hide" id="cont-2-1">
-							<div class="Description">
-								<div class="Center">
-									<h3>位置定位</h3>
-									<br>
-								</div>
-								<h3>
-									<ul class="fa-ul">
-										<li><span>
-											寵物走失，掃描PTag上的QR Code，即時提供寵物位置及資料<br><br></span>
-										</li>
-									</ul>
-								</h3>
-                            </div>
-                        </div>
-                        <!--div class="tabcontent hide" id="cont-3-1">
-                            <div class="Description">
-								<div class="Center">
-									<h3>人工智能(AI) 眼疾篩查 (僅限特選客戶)</h3>
-								</div>
-								<h3>
-									<ul class="fa-ul">
-										<li><span>
-										用手機拍下寵物眼睛，檢測白內障、青光眼、核硬化等常見眼疾。系統根據健康狀況，提供護理建議
-										<br><br>此健康篩查及建議僅供參考，無法替代專業獸醫意見. 請諮詢您的主診獸醫
-										</span><br>
-										</li><br>									
-									</ul>
-								</h3>
-
-                            </div>
-                        </div-->
-						<div class="tabcontent hide" id="cont-4-1">
-                            <div class="Description">
-								<div class="Center">
-									<h3>自訂照片</h3>
-								</div>
-								<h3>
-									<ul class="fa-ul">
-										<li><span>
-										不只是刻字，PTag 還能刻上您喜愛的照片. 光線下，展現經典黑白影像
-										</span><br>
-										</li><br>
-									</ul>
-								</h3>
-                            </div>
-                        </div>
-						<div class="tabcontent hide" id="cont-5-1">
-                            <div class="Description">
-								<div class="Center">
-									<h3>智慧健康管理</h3>
-								</div>
-								<h3>
-									<ul class="fa-ul">
-										<li><span>
-										三步輕鬆註冊，全面記錄寵物資料掃描 QR Code，即時查看健康狀況及聯絡方法
-										</span><br><br><br>
-										</li>
-									</ul>
-									
-								</h3>
-                            </div>
-                        </div>
-						<div class="tabcontent hide" id="cont-6-1">
-                            <div class="Description">
-								<div class="Center">
-									<h3>社交媒體尋寵</h3>
-								</div>
-								<h3>
-									<ul class="fa-ul">
-										<li><span>
-										連結 Facebook 及 Instagram 千人協尋群組，即時傳遞訊息，幫你快啲搵返愛寵
-										</span><br>
-										</li><br>
-									</ul>
-								</h3>
-                            </div>
-                        </div>
-
-	                    <div class="clear"></div>	
-                    </div>                    
-                <!-- // End Tab Side // -->
-            </div>                
-        </div>
-        <!-- // End Services Section // -->
-        <!-- \\ Begin Pricing Section \\ -->
-        <div class="Pricing_sec" id="pricing">
-            <div class="Center">
-                <h2>揀選不同 <font color="#000000">PTag </font></h2>
-                <span><p><a href="tmpl\learn_more.html">進一步了解 > </a></p></span>
-                <p>
-				
-                <!--div class="Line"></div-->
-				</p>
+<!-- \\ Begin Pricing Section \\ -->
+<div class="Pricing_sec" id="pricing">
+  <div class="Center">
+      <h2>揀選不同 <font color="#000000">PTag </font></h2>
+      <span><p><a href="tmpl/learn_more.html">進一步了解 > </a></p></span>
+      <p>
+          <center><img src="img/ptag_gold_ptag_air.png" alt="image" width="40%" height="40%"></center>
+      </p>
+  </div>
+</div>
 				<center><img src="img/ptag_gold_ptag_air.png" alt="image" width="40%" height="40%"></center>
                 <!-- \\ Begin Pricing Side \\ -->
                 
