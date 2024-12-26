@@ -408,20 +408,44 @@
 <!-- // End Services Section // -->
 
 <!-- \\ Begin Pricing Section \\ -->
-<div class="Pricing_sec" id="pricing">
-  <div class="Center">
-      <h2>揀選不同 <font color="#000000">PTag </font></h2>
-      <span><p><a href="tmpl/learn_more.html">進一步了解 > </a></p></span>
-      <p>
-          <center><img src="img/ptag_gold_ptag_air.png" alt="image" width="40%" height="40%"></center>
-      </p>
-  </div>
+    <div class="Pricing_sec" id="pricing">
+    <div class="Center">
+        <h2 style="color: #000000; font-weight: bold;">揀選不同 PTag</h2>
+        <div class = "features" style = "padding: 115px 0px 88px 0px;">
+            <p>
+                <center>
+                <img src="dog icon.png" alt="image" width="50" height="30">
+                </center>
+            <div>
+            <p style="color: #000000; font-weight: bold;">
+                <a href="tmpl/learn_more.html" style="display: inline-block; background-color: #FFB60C; color: #FFFFFF; font-weight: bold; width: 222px; height: 100px; border-radius: 26px; font-size: 24px; text-decoration: underline; text-align: center; line-height: 100px;">
+                    進一步了解 >
+                </a>
+            </p>
+            </div>
+                <center>
+                <img src="dog icon.png" alt="image" width="50" height="30">
+                </center>
+            </p>
+        </div>
+        <div class = "features" style = "font-size: 36; color: #000000;">
+            <p>PTag</p>
+            <p>PTag Air</p>
+        </div>
+    </div>
 </div>
-				<center><img src="img/ptag_gold_ptag_air.png" alt="image" width="40%" height="40%"></center>
+
+<div style = "background-color: #E6EEFD; text-align: center; font-family: Helvetica, sans-serif, Arial; font-weight: bold;">
+    <h1 style = "color: #050505; size: 64px;">愛護動物協會 x 寵物仔仔 聯乘系列</h1>
+    <p style="color: #000000; size: 24px;">今次與愛協合作, 推出愛協會員PTag優惠, <br> 旨希望更多人使用"PTag Locate Pet Tag"，從而改善香港走失寵物既情況</p>
+    <img src="image.png" alt="image" style="width: 596px; height: 206px; top: 432px; left: 662px; gap: 0px; border-radius: 30px 0px 0px 0px; opacity: 0px;" />    
+
+</div>
+
+
+
                 <!-- \\ Begin Pricing Side \\ -->
                 
-            </div>
-        </div>
 		<!-- // End Pricing Section // -->
         <!-- \\ Begin Services Section \\ -->
         <!--div class="HowToUse_sec" id="spca">
