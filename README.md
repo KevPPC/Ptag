@@ -85,13 +85,13 @@
     }
     .feature {
         background-color: white;
-        border-radius: 24px; /* Updated border radius */
-        padding: 32px; /* Updated padding */
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        width: 244px; /* Set width */
-        height: 261px; /* Set height */
+        border-radius: 24px; 
+        padding: 32px; 
+        
+        width: 244px; 
+        height: 261px; 
         text-align: center;
-        transition: transform 0.2s; /* Add a hover effect */
+        transition: transform 0.2s; 
     }
     .feature:hover {
         transform: scale(1.05); /* Slightly enlarge on hover */
@@ -111,6 +111,107 @@
         font-size: 0.9em; /* Adjust font size for better readability */
         color: #666;
     }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .partners-section {
+      padding: 50px 0;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0;
+    }
+
+    .section-title h2 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .supporters {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      width: 50%;
+    }
+
+    .supporter-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .supporter-card img {
+      max-width: 100px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .supporter-card p {
+      font-size: 14px;
+      color: #333;
+      margin: 0;
+    }
+
+    .partners {
+      position: relative;
+      width: 50%;
+    }
+
+    .circle {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      border: 2px dashed #ddd;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .circle img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .partner-logo {
+      position: absolute;
+    }
+
+    .partner-logo img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
 
 	</style>
     
@@ -214,8 +315,8 @@
             <div class="HowToUse_sec" id="about">
                 <div class="Center">            
                   <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 20px;">
-                    <span style="color: #000000;">PTag </span>
-                    <span style="color: #65A8FB;">Air</span>
+                    <span style="color: #000000; font-weight: bold;">PTag </span>
+                    <span style="color: #65A8FB; font-weight: bold;">Air</span>
                 </h2>
                 <p style="text-align: center; font-size: 1.2em; color: black; line-height: 1.6;">
                     • 僅重 3 克，輕巧如羽，是一般寵物牌重量的五分之一。<br>
@@ -254,27 +355,27 @@
 </h1>
   <div class="features">
       <div class="feature">
-          <img src="instagram icon.jpeg" alt="Feature 1">
+          <img src="Group 9422.png" alt="Feature 1">
           <h2>特別設計</h2>
           <p>PTag Air 具備 QR Code 功能，方便您隨時使用。</p>
       </div>
       <div class="feature">
-          <img src="instagram icon.jpeg" alt="Feature 2">
+          <img src="Group 9423.png" alt="Feature 2">
           <h2>安全資訊</h2>
           <p>所有資料均為加密保存，保障您的隱私。</p>
       </div>
       <div class="feature">
-          <img src="instagram icon.jpeg" alt="Feature 3">
+          <img src="Group 9424.png" alt="Feature 3">
           <h2>自訂圖片</h2>
           <p>可上載您喜愛的圖片，個性化您的 PTag。</p>
       </div>
       <div class="feature">
-          <img src="instagram icon.jpeg" alt="Feature 4">
+          <img src="Group 9425.png" alt="Feature 4">
           <h2>社交媒體連結</h2>
           <p>連結 Facebook 和 Instagram，輕鬆分享。</p>
       </div>
       <div class="feature">
-          <img src="instagram icon.jpeg" alt="Feature 5">
+          <img src="Group 9426.png" alt="Feature 5">
           <h2>即時更新</h2>
           <p>隨時更新您的信息，保持最新狀態。</p>
       </div>
@@ -284,162 +385,45 @@
 
 <!-- // End Contact Section // -->
 			<!--div class="Services_sec">
-		<!-- // End Contact Section // -->
-    <div class="Services_sec" id="services">
-      <div class="Center">
-          <div class="Tabside">
-            <h1 style="color: #050505; font-size: 64px; font-weight: bold;">
-                PTag <span style="color: #65A8FB; font-weight: bold;">Air</span> <span style="color: #65A8FB;">五</span>大功能
-            </h1>
-              <ul>
-                <li>
-                    <a href="javascript:;" class="tabLink activeLink" id="cont-1"><i class="fa fa-leaf fa-5x" aria-hidden="true"></i><br>
-                        <div class="feature">
-                            <img src="instagram icon.jpeg" alt="功能1">
-                            <h2>智能診斷</h2>
-                            <p>PTag 能夠快速診斷，提供準確的健康建議。</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="tabLink" id="cont-2"><i class="fa fa-map-marker fa-5x" aria-hidden="true"></i><br>
-                        <div class="feature">
-                            <img src="instagram icon.jpeg" alt="功能2">
-                            <h2>定點記錄</h2>
-                            <p>可記錄特定時間的健康數據。</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="tabLink" id="cont-4"><i class="fa fa-picture-o fa-5x" aria-hidden="true"></i><br>
-                        <div class="feature">
-                            <img src="instagram icon.jpeg" alt="功能3">
-                            <h2>自動圖片</h2>
-                            <p>透過自動拍攝功能，輕鬆獲取健康圖像。</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="tabLink" id="cont-5"><i class="fa fa-database fa-5x" aria-hidden="true"></i><br>
-                        <div class="feature">
-                            <img src="instagram icon.jpeg" alt="功能4">
-                            <h2>數據管理</h2>
-                            <p>便捷管理所有健康數據，隨時查看。</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="tabLink" id="cont-6"><i class="fa fa-share-square-o fa-5x" aria-hidden="true"></i><br>
-                        <div class="feature">
-                            <img src="instagram icon.jpeg" alt="功能5">
-                            <h2>社交媒體整合</h2>
-                            <p>可連接 Facebook 和 Instagram，分享健康成果。</p>
-                        </div>
-                    </a>
-                </li>
-              </ul>
-              <div class="clear"></div>
-              <div class="tabcontent" id="cont-1-1">
-                  <div class="Description">
-                      <div class="Center">
-                          <h3>輕巧設計</h3>
-                          <br>
-                      </div>
-                      <h3>
-                          <ul class="fa-ul">
-                              <li><span>PTag Air 僅重約 3 克，讓您的愛寵自在活動<br><br></span></li>
-                          </ul>
-                      </h3>
-                  </div>
-              </div>
-              <div class="tabcontent hide" id="cont-2-1">
-                  <div class="Description">
-                      <div class="Center">
-                          <h3>位置定位</h3>
-                          <br>
-                      </div>
-                      <h3>
-                          <ul class="fa-ul">
-                              <li><span>寵物走失，掃描PTag上的QR Code，即時提供寵物位置及資料<br><br></span></li>
-                          </ul>
-                      </h3>
-                  </div>
-              </div>
-              <div class="tabcontent hide" id="cont-4-1">
-                  <div class="Description">
-                      <div class="Center">
-                          <h3>自訂照片</h3>
-                      </div>
-                      <h3>
-                          <ul class="fa-ul">
-                              <li><span>不只是刻字，PTag 還能刻上您喜愛的照片. 光線下，展現經典黑白影像</span><br></li>
-                          </ul>
-                      </h3>
-                  </div>
-              </div>
-              <div class="tabcontent hide" id="cont-5-1">
-                  <div class="Description">
-                      <div class="Center">
-                          <h3>智慧健康管理</h3>
-                      </div>
-                      <h3>
-                          <ul class="fa-ul">
-                              <li><span>三步輕鬆註冊，全面記錄寵物資料掃描 QR Code，即時查看健康狀況及聯絡方法</span><br><br><br></li>
-                          </ul>
-                      </h3>
-                  </div>
-              </div>
-              <div class="tabcontent hide" id="cont-6-1">
-                  <div class="Description">
-                      <div class="Center">
-                          <h3>社交媒體尋寵</h3>
-                      </div>
-                      <h3>
-                          <ul class="fa-ul">
-                              <li><span>連結 Facebook 及 Instagram 千人協尋群組，即時傳遞訊息，幫你快啲搵返愛寵</span><br></li>
-                          </ul>
-                      </h3>
-                  </div>
-              </div>
-              <div class="clear"></div>
-          </div>                    
-      </div>                
-  </div>
-<!-- // End Services Section // -->
+	
 
 <!-- \\ Begin Pricing Section \\ -->
-    <div class="Pricing_sec" id="pricing">
-    <div class="Center">
-        <h2 style="color: #000000; font-weight: bold;">揀選不同 PTag</h2>
-        <div class = "features" style = "padding: 115px 0px 88px 0px;">
-            <p>
-                <center>
-                <img src="dog icon.png" alt="image" width="50" height="30">
-                </center>
-            <div>
-            <p style="color: #000000; font-weight: bold;">
-                <a href="tmpl/learn_more.html" style="display: inline-block; background-color: #FFB60C; color: #FFFFFF; font-weight: bold; width: 222px; height: 100px; border-radius: 26px; font-size: 24px; text-decoration: underline; text-align: center; line-height: 100px;">
-                    進一步了解 >
-                </a>
-            </p>
-            </div>
-                <center>
-                <img src="dog icon.png" alt="image" width="50" height="30">
-                </center>
-            </p>
-        </div>
-        <div class = "features" style = "font-size: 36; color: #000000;">
-            <p>PTag</p>
-            <p>PTag Air</p>
-        </div>
-    </div>
-</div>
+<div class="Pricing_sec" id="pricing" style="text-align: center; background-color: #F5F5F5; padding: 50px 0;">
+  <div class="Center">
+      <h2 style="color: #000000; font-weight: bold; font-size: 32px;">揀選不同 PTag</h2>
+      <div class="features" style="display: flex; justify-content: center; align-items: center; margin-top: 50px;">
+          <!-- PTag Section -->
+          <div style="text-align: center; margin: 0 40px;">
+              <img src="ptag_gold_ptag_air.png.png" alt="PTag" style="width: 220px; height: auto; border-radius: 50%;">
+              <p style="color: #000000; font-weight: bold; font-size: 18px; margin-top: 15px;">PTag</p>
+          </div>
 
-<div style = "background-color: #E6EEFD; text-align: center; font-family: Helvetica, sans-serif, Arial; font-weight: bold;">
+          <!-- Button Section -->
+          <div style="margin: 0 40px;">
+              <a href="tmpl/learn_more.html" style="display: inline-block; background-color: #FFB60C; color: #FFFFFF; font-weight: bold; font-size: 20px; text-decoration: underline; border-radius: 26px; padding: 20px 50px;">
+                  進一步了解 >
+              </a>
+          </div>
+
+          <!-- PTag Air Section -->
+          <div style="text-align: center; margin: 0 40px;">
+              <img src="ptag_gold_ptag_air.png (4).png" alt="PTag Air" style="width: 220px; height: auto; border-radius: 50%;">
+              <p style="color: #000000; font-weight: bold; font-size: 18px; margin-top: 15px;">PTag Air</p>
+          </div>
+      </div>
+  </div>
+  
+
+
+<div style = "background-color: #E6EEFD; text-align: center; font-family: Helvetica, sans-serif, Arial; font-weight: bold; width:1920px; height:734px">
     <h1 style = "color: #050505; size: 64px;">愛護動物協會 x 寵物仔仔 聯乘系列</h1>
     <p style="color: #000000; size: 24px;">今次與愛協合作, 推出愛協會員PTag優惠, <br> 旨希望更多人使用"PTag Locate Pet Tag"，從而改善香港走失寵物既情況</p>
-    <img src="image.png" alt="image" style="width: 596px; height: 206px; top: 432px; left: 662px; gap: 0px; border-radius: 30px 0px 0px 0px; opacity: 0px;" />    
-
+   
+      <img src="SPCA.png (1).png" alt="image" style="width: 596px; height: 206px; border-radius: 30px; left: 662px; top: 432px;" />
+  </div>
+  
+  
+  
 </div>
 
 
@@ -467,6 +451,51 @@
         </div>
         <!-- // End Services Section // -->	
        
+    <div class="features">
+        <!-- \\ Begin Services Section \\ -->
+        <div class="HowToUse_sec" id="services">
+            <div class="Center">
+                <h2>我們的支持者</h2>
+                <!-- \\ Begin Services Side  \\ -->
+                <div class="Serviceside">
+                    <ul>
+	                    <li class="Development">
+	                        <img src="HKSTP_Logo_Web_E.png" width="150" alt="clients logo"> 
+	                    </li>
+    	                <li class="Desdin">
+    	                    <img src="PolyVenture.png" width="150" alt="clients logo" >
+    	                </li>
+	                    <li class="Concept">
+	                        <img src="1088px-Amazon_Web_Services_Logo (1).png" width="150" alt="clients logo">
+	                    </li>
+                    </ul>
+                        <ul>
+	                    <li class="Development">
+	                        <img src="HKTDC.svg" width="150" alt="clients logo" >
+	                    </li>
+    	                <li class="Desdin">
+    	                    <img src="FA_PF_Logo.png" width="150" alt="clients logo" >
+    	                </li>
+	                    <li class="Concept">
+	                        <img src="IPHatch_Logo.png" width="150" alt="clients logo">
+	                    </li>
+                    </ul>
+                        <ul>
+	                    <li class="Development">
+	                        <img src="LOGO_website.png" width="150" alt="clients logo" >
+	                    </li>
+    	                <li class="Desdin">
+    	                     <img src="hkylogo.png" width="150" alt="clients logo" >
+    	                </li>
+	                    <li class="Concept">
+	                    </li>
+                    </ul
+                </div>
+                <!-- // End Services Side // -->
+            </div>                
+        </div>
+        <!-- // End Services Section // -->	
+
        <!-- \\ Begin Services Section \\ -->
         <div class="HowToUse_sec" id="services">
             <div class="Center">
@@ -478,29 +507,25 @@
 	                        <img src="images/clients/SPCA.png" width="150" alt="clients logo"> 
 	                    </li-->
     	                <li class="Desdin">
-    	                    <img src="images/clients/ALVA Logo-01.png" width="150" alt="clients logo" >
+    	                    <img src="ALVA Logo-01.png" width="150" alt="clients logo" >
     	                </li>
 	                    <li class="Concept">
-	                        <img src="images/clients/OneDegree.png" width="150" alt="clients logo">
+	                        <img src="OneDegree.png" width="150" alt="clients logo">
 	                    </li>
                     </ul>
                         <ul>
 	                    <li class="Development">
-	                        <img src="images/clients/343415460_661371749340541_8476309168918998204_n.jpg" width="150" alt="clients logo" >
+	                        <img src="MO.jpg" width="150" alt="clients logo" >
 	                    </li>
     	                <li class="Desdin">
-    	                    <img src="images/clients/265979476_1512959319074288_4546861574741602234_n.png" width="150" alt="clients logo" >
+    	                    <img src="coryfire.png" width="150" alt="clients logo" >
     	                </li>
 	                    <li class="Concept">
-	                        <img src="images/clients/app-icon (1).png" width="150" alt="clients logo">
+	                        <img src="app-icon (1).png" width="150" alt="clients logo">
 	                    </li>
                     </ul>
                         <ul>
-	                    <li class="Development">
-	                        <img src="images/clients/SOCIAL-paws-3-03.jpg" width="150" alt="clients logo" >
-	                    </li>
-    	                <li class="Desdin">
-    	                     <img src="images/clients/Bodygem_logo-500x500.png" width="150" alt="clients logo" >
+	      " width="150" alt="clients logo" >
     	                </li>
 	                    <li class="Concept">
 	                    </li>
@@ -511,52 +536,7 @@
         </div>
         <!-- // End Services Section // -->		
        
-        <!-- \\ Begin Services Section \\ -->
-        <div class="HowToUse_sec" id="services">
-            <div class="Center">
-                <h2>我們的支持者</h2>
-                <!-- \\ Begin Services Side  \\ -->
-                <div class="Serviceside">
-                    <ul>
-	                    <li class="Development">
-	                        <img src="images/clients/HKSTP_Logo_Web_E.png" width="150" alt="clients logo"> 
-	                    </li>
-    	                <li class="Desdin">
-    	                    <img src="images/clients/PolyVenture.png" width="150" alt="clients logo" >
-    	                </li>
-	                    <li class="Concept">
-	                        <img src="images/clients/1088px-Amazon_Web_Services_Logo (1).png" width="150" alt="clients logo">
-	                    </li>
-                    </ul>
-                        <ul>
-	                    <li class="Development">
-	                        <img src="images/clients/logo.762605eb.svg" width="150" alt="clients logo" >
-	                    </li>
-    	                <li class="Desdin">
-    	                    <img src="images/clients/FA_PF_Logo.png" width="150" alt="clients logo" >
-    	                </li>
-	                    <li class="Concept">
-	                        <img src="images/clients/IPHatch_Logo.png" width="150" alt="clients logo">
-	                    </li>
-                    </ul>
-                        <ul>
-	                    <li class="Development">
-	                        <img src="images/clients/LOGO_website.png" width="150" alt="clients logo" >
-	                    </li>
-    	                <li class="Desdin">
-    	                     <img src="images/clients/hkylogo.png" width="150" alt="clients logo" >
-    	                </li>
-	                    <li class="Concept">
-	                    </li>
-                    </ul
-                </div>
-                <!-- // End Services Side // -->
-            </div>                
-        </div>
-        <!-- // End Services Section // -->		
-     
-     
-     
+    </div>
         <!-- // End Pricing Section // -->
         <!-- \\ Begin Contact Section \\ -->
         <div class="Contact_sec" id="contact">                
