@@ -1,0 +1,1069 @@
+/*
+
+November Template
+
+http://www.templatemo.com/tm-473-november
+
+*/
+
+/* --** Reset CSS **-- */
+* { margin: 0px; padding: 0px; box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { border: 0; font-family: inherit; font-size: 100%; font-weight: inherit; margin: 0; outline: 0; padding: 0; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+html, body, button, input, select, textarea { font-family: Arial; font-size: 12px; color: #000000; }
+ul, ol { margin-top: 0; margin-bottom: 10px; }
+ul ul { margin-bottom: 0; }
+li { font-size: 13px; margin: 5px 0px 10px 0px; }
+pre { overflow: auto; }
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { font-weight: normal; text-align: left; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; quotes: none; }
+a img { border: 0; }
+a, input { outline: none; }
+a { color: #F06;  }
+a:hover { text-decoration: none; }
+h1, h2, h3, h4, h5, h6 { margin: 5px 0px 15px 0px; clear: both; font-family: 'Microsoft JhengHei'; font-weight: lighter; }
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 20px; }
+h5 { font-size: 18px; }
+h6 { font-size: 14px; }
+p {font-size: 13px; margin: 5px 0px 15px 0px; }
+
+img { -ms-interpolation-mode: bicubic; border: 0; height: auto; max-width: 100%; vertical-align: middle; display: block; border-radius:30px;  }
+img.center { display: block; margin: 0 auto; height: 70%; width: 70%;}
+img.AppStore { -ms-interpolation-mode: bicubic; border: 0; vertical-align: middle; display: block;  }
+figure { margin: 0; }
+::-webkit-input-placeholder { color: rgba(51, 51, 51, 0.7); }
+:-moz-placeholder { color: rgba(51, 51, 51, 0.7); }
+::-moz-placeholder { color: rgba(51, 51, 51, 0.7); opacity: 1; /* Since FF19 lowers the opacity of the placeholder by default */ }
+:-ms-input-placeholder { color: rgba(51, 51, 51, 0.7); }
+input:focus, textarea:focus { background-color: #fff; border: 1px solid #c1c1c1; border: 1px solid rgba(51, 51, 51, 0.3); color: #333; }
+input:focus, select:focus { outline: 2px solid #c1c1c1; outline: 2px solid rgba(51, 51, 51, 0.3); }
+.hide { display: none;}
+
+.clear { clear: both; height: 0px; overflow: hidden; }
+
+/* <<< Design Holder >>> */
+.DesignHolder { position: relative; display: block; width: 100%; min-height: 70%; }
+
+/* <<< Layout Frame >>> */
+.LayoutFrame { margin: 0 auto; width: 100%; display: block; }
+
+/* <<< Body >>> */
+body { background: #fff; }
+
+/* <<< Header >>> */
+header { width: 100%; position: fixed; top: 0px; left: 0px; height: 105px; background: rgba(0, 0, 0, 0.5); z-index: 9; }
+header .Center { max-width: 1100px; margin: auto; }
+header .site-logo { padding: 30px 0px 0px 0px; width: 220px; float: left; transition: all 0.3s;  }
+header .site-logo h1 { margin: 0px; }
+header .site-logo h1 a { font-size: 36px; color: #fff; font-family: 'helvetica', 'Arial', 'Microsoft JhengHei', sans-serif; font-weight:400; text-decoration: none; text-transform: text-shadow: rgb(3, 3, 3) 0px 2px 5px; transition: all 0.7s ease;  }
+header .site-logo h1 a span { color: #139346; }
+/*header .logo-image #title a { background: url( 'images/en-play-badge.png' ) no-repeat;}*/
+header.smaller { padding: 0px 0px 0px 0px; height: 60px; transition: all 0.3s; background: rgba(0, 0, 0, 0.75); }
+header.smaller .site-logo {padding: 13px 0px 0px 0px; }
+header.smaller .site-logo h1 { line-height: 30px; }
+header.smaller .site-logo h1 a { font-size: 30px;  }
+
+/* <<< Navigation >>> */
+.Navigation { float: right; width: 68.18%; margin-right: 11px; }
+.Navigation ul { list-style: none; margin: 0px; float: right; }
+.Navigation li { float: left; padding: 0px;  margin: 0px; height: 105px; position: relative; transition: all 0.3s ease; }
+.Navigation li a { padding: 42px 41px 36px 41px; font-size: 16px; color: #fff; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; text-decoration: none; display: block; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+.Navigation li span { 
+	border-bottom: solid 5px #139346;
+	background: rgba(6,7,1,1);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(6,7,1,1)), color-stop(0%, rgba(6,7,1,1)), color-stop(0%, rgba(6,7,1,1)), color-stop(100%, rgba(44,68,94,1)));
+	background: linear-gradient(to bottom, rgba(6,7,1,1) 0%, rgba(6,7,1,1) 0%, rgba(6,7,1,1) 0%, rgba(116,118,119,1) 100%);
+/* Edit on 9 JAN 2017
+	background: rgba(56,87,122,1);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(56,87,122,1)), color-stop(0%, rgba(56,87,122,1)), color-stop(0%, rgba(56,87,122,1)), color-stop(100%, rgba(44,68,94,1)));
+	background: linear-gradient(to bottom, rgba(56,87,122,1) 0%, rgba(56,87,122,1) 0%, rgba(56,87,122,1) 0%, rgba(44,68,94,1) 100%);
+*/
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38577a', endColorstr='#2c445e', GradientType=0 );
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -10;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+.Navigation li:hover span, .Navigation li.active span {
+	opacity: 1;
+}
+
+header.smaller .Navigation li a { padding: 16px 41px; }
+header.smaller .Navigation li { height: 60px; }
+
+.mobile { display: none;  }
+.mobile .fa { padding: 16px 14px; font-size: 20px; width: 100px; height: 55px; color: #fff; cursor: pointer; background: #139346; }
+.mobile .fa:hover { background: #139346; }
+.mobile.closed .fa-bars { display: none; }
+.mobile .fa-times { padding: 16px 15.5px; width: 100px; height: 55px; display: none; font-size: 20px; }
+.mobile.closed .fa-times { display: block; }
+
+/* <<< Banner Section >>> */
+/*Edit by Henry on 2 Jan 2017*/
+.Banner_sec { width: 100%; background: url(../img/PTag.jpg) top center no-repeat; height: 1007px; position: relative; background-size: cover; }
+.Banner_sec .bannerside { width: 100%; position: absolute; top: 256px; left: 0px; }
+.Banner_sec .Center { max-width: 1100px; margin: auto; }
+/*Added by Henry on 2 Jan 2017*/
+.Banner_sec .Slider .text { padding: 25px 47px 21px 30px; position: absolute; bottom: 0px; left: 0px; width: 100%; background: rgba(0, 0, 0, 0.7); }
+.Banner_sec .Slider .text .Icon { width: 38%; float: left; }
+.Banner_sec .Slider .text ul { list-style: none; margin: 0px; }
+.Banner_sec .Slider .text li { float: left!important; padding: 0px 30px 0px 10px; margin: 0px; }
+.Banner_sec .Slider .text li a { display: block; font-size: 14px; color: #fff; text-decoration: none; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; transition: all 0.3s ease;}
+.Banner_sec .Slider .text li:last-child { padding: 0px; }
+.Banner_sec .Slider .text li:hover a { color: #139346!important;}
+.Banner_sec .Slider .text li a .fa { padding: 13px; margin-right: 10px; color: #fff; border-radius: 50px; border: solid 2px #fff; transition: all 0.3s ease; }
+.Banner_sec .Slider .text li:hover a .fa { background: #139346; color: #fff; border: solid 2px #139346; }
+.Banner_sec .Slider .text li:last-child { padding-right: 0px; padding-left: 0px;}
+.Banner_sec .Slider .text .Lorem { float: right; width: 31%; }
+.Banner_sec .Slider .text .Lorem p { padding-top: 5px; font-size: 18px; color: #fff; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; text-transform: uppercase; text-align: right; line-height: 19px; }
+.Banner_sec  .Slider .text .Lorem p span { font-size: 14px; text-align: right; color: #139346; display: block; text-transform: capitalize;}
+/*Edit by Henry on 17 Sep 2016 
+.Banner_sec .leftside { padding: 92px 0px 0px 0px; width: 28.90%; float: left; }
+*/
+.Banner_sec .leftside { padding: 92px 0px 0px 0px; width: 35.90%; float: left; }
+.Banner_sec .leftside h1 { font-size: 36px; color: #fff; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 800; text-transform: margin: 0px; line-height: 34px;}
+.Banner_sec .leftside h1 span{ color: #139346; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600;}
+.Banner_sec .leftside h3 { font-size: 36px; color: #fff; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 800; text-transform: margin: 0px; line-height: 34px;}
+.Banner_sec .leftside h3 span { color: #139346; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; display: block; }
+.Banner_sec .leftside p { padding: 16px 0px 26px 0px; font-size: 16px; color: #fff; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; font-style: italic; margin: 0px; word-spacing: 2px; line-height: 22px; }
+.Banner_sec .leftside a { padding: 11px 16px; font-size: 14px; color: #fff; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; text-transform: uppercase; text-decoration: none; display: inline-block; border: solid 1px #b0bdc8; background: rgba(64, 93, 118, 0.8); transition: all 0.3s ease; }
+.Banner_sec .leftside a:hover { background: #139346; color: #fff; border: solid 1px #139346; }
+/*Added by Henry on 8 Feb 2017*/
+.Banner_sec .rightside2 { width: 30%; float: right; position: relative; }
+.Banner_sec .rightside2 h1 { font-size: 36px; color: #000; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 800; text-transform: margin: 0px; line-height: 34px;}
+.Banner_sec .rightside2 h1 span{ color: #000; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600;}
+.Banner_sec .rightside2 h3 {  padding: 230px 0px 26px 0px; text-align: center; font-size: 60px; color: #000; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; text-transform: margin: 0px; line-height: 100px;}
+.Banner_sec .rightside2 h3 span { font-size: 23px; color: #000; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; display: block; line-height: 35px}
+.Banner_sec .rightside2 p { padding: 16px 0px 26px 0px; font-size: 16px; color: #fff; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; font-style: italic; margin: 0px; word-spacing: 2px; line-height: 22px; }
+.Banner_sec .rightside2 a { padding: 11px 16px; font-size: 14px; color: #fff; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; text-transform: uppercase; text-decoration: none; display: inline-block; border: solid 1px #b0bdc8; background: rgba(64, 93, 118, 0.8); transition: all 0.3s ease; clear: right;}
+.Banner_sec .rightside2 a:hover { background: #139346; color: #fff; border: solid 1px #139346; }
+.Banner_sec .rightside2 .Center { text-align: center; }
+
+.Banner_sec .rightside { width: 68.36%; float: right; position: relative; }
+.Banner_sec .rightside .bx-wrapper { position: relative; z-index: 1; }
+.Banner_sec .rightside ul { list-style: none; margin: 0px; }
+.Banner_sec .rightside li { padding: 0px; margin: 0; float: none!important; }
+.Banner_sec .rightside #slider { width: 100%; float: right;  position: relative; z-index: 1; }
+.Banner_sec .rightside .Slider .text { padding: 25px 47px 21px 30px; position: absolute; bottom: 0px; left: 0px; width: 100%; background: rgba(0, 0, 0, 0.7); }
+.Banner_sec .rightside .Slider .text .Icon { width: 38%; float: left; }
+.Banner_sec .rightside .Slider .text ul { list-style: none; margin: 0px; }
+.Banner_sec .rightside .Slider .text li { float: left!important; padding: 0px 30px 0px 10px; margin: 0px; }
+.Banner_sec .rightside .Slider .text li a { display: block; font-size: 14px; color: #fff; text-decoration: none; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; transition: all 0.3s ease;}
+.Banner_sec .rightside .Slider .text li:last-child { padding: 0px; }
+.Banner_sec .rightside .Slider .text li:hover a { color: #139346!important;}
+.Banner_sec .rightside .Slider .text li a .fa { padding: 13px; margin-right: 10px; color: #fff; border-radius: 50px; border: solid 2px #fff; transition: all 0.3s ease; }
+.Banner_sec .rightside .Slider .text li:hover a .fa { background: #139346; color: #fff; border: solid 2px #139346; }
+.Banner_sec .rightside .Slider .text li:last-child { padding-right: 0px; padding-left: 0px;}
+.Banner_sec .rightside .Slider .text .Lorem { float: right; width: 31%; }
+.Banner_sec .rightside .Slider .text .Lorem p { padding-top: 5px; font-size: 18px; color: #fff; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; text-transform: uppercase; text-align: right; line-height: 19px; }
+.Banner_sec .rightside .Slider .text .Lorem p span { font-size: 14px; text-align: right; color: #139346; display: block; text-transform: capitalize;}
+.Banner_sec .rightside .prevBtn { width: 42px; height: 42px; display: block; text-indent: -9999px; background: url(../img/prev-arrow.png) no-repeat; position: absolute; top: 213px; left: 49px;  z-index: 1; opacity: 0.5; transition: opacity 0.3s ease; }
+.Banner_sec .rightside .prevBtn:hover {  opacity: 1; }	
+.Banner_sec .rightside .nextBtn { width: 42px; height: 42px; display: block; text-indent: -9999px; background: url(../img/next-arrow.png) no-repeat; position: absolute; top: 213px; right: 47px;  z-index: 1; opacity: 0.5; transition: opacity 0.3s ease; }
+.Banner_sec .rightside .nextBtn:hover { opacity: 1; }	
+.Banner_sec .rightside .Shadow { position: absolute; bottom: -3px; left: -25px; max-width: none; }
+
+/* <<< Member Banner  Section >>> */
+.MemberBanner_sec { width: 100%; background: url(../img/Dog-Wallpaper.jpg) top center no-repeat; height: 1007px; position: relative; background-size: cover; }
+.MemberBanner_sec .bannerside { width: 100%; position: absolute; top: 256px; left: 0px; }
+.MemberBanner_sec .Center { max-width: 1100px; margin: auto; }
+.MemberBanner_sec .Slider .text { padding: 25px 47px 21px 30px; position: absolute; bottom: 0px; left: 0px; width: 100%; background: rgba(0, 0, 0, 0.7); }
+.MemberBanner_sec .Slider .text .Icon { width: 38%; float: left; }
+.MemberBanner_sec .Slider .text ul { list-style: none; margin: 0px; }
+.MemberBanner_sec .Slider .text li { float: left!important; padding: 0px 30px 0px 10px; margin: 0px; }
+.MemberBanner_sec .Slider .text li a { display: block; font-size: 14px; color: #fff; text-decoration: none; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; transition: all 0.3s ease;}
+.MemberBanner_sec .Slider .text li:last-child { padding: 0px; }
+.MemberBanner_sec .Slider .text li:hover a { color: #139346!important;}
+.MemberBanner_sec .Slider .text li a .fa { padding: 13px; margin-right: 10px; color: #fff; border-radius: 50px; border: solid 2px #fff; transition: all 0.3s ease; }
+.MemberBanner_sec .Slider .text li:hover a .fa { background: #139346; color: #fff; border: solid 2px #139346; }
+.MemberBanner_sec .Slider .text li:last-child { padding-right: 0px; padding-left: 0px;}
+.MemberBanner_sec .Slider .text .Lorem { float: right; width: 31%; }
+.MemberBanner_sec .Slider .text .Lorem p { padding-top: 5px; font-size: 18px; color: #fff; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; text-transform: uppercase; text-align: right; line-height: 19px; }
+.MemberBanner_sec  .Slider .text .Lorem p span { font-size: 14px; text-align: right; color: #139346; display: block; text-transform: capitalize;}
+/*Edit by Henry on 17 Sep 2016 
+.MemberBanner_sec .leftside { padding: 92px 0px 0px 0px; width: 28.90%; float: left; }
+*/
+.MemberBanner_sec .leftside { padding: 92px 0px 0px 0px; width: 35.90%; float: left; }
+.MemberBanner_sec .leftside h1 { font-size: 36px; color: #fff; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 800; text-transform: margin: 0px; line-height: 34px;}
+.MemberBanner_sec .leftside h1 span{ color: #139346; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600;}
+.MemberBanner_sec .leftside h3 { font-size: 36px; color: #fff; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 800; text-transform: margin: 0px; line-height: 34px;}
+.MemberBanner_sec .leftside h3 span { color: #139346; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; display: block; }
+.MemberBanner_sec .leftside p { padding: 16px 0px 26px 0px; font-size: 16px; color: #fff; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; font-style: italic; margin: 0px; word-spacing: 2px; line-height: 22px; }
+.MemberBanner_sec .leftside a { padding: 11px 16px; font-size: 14px; color: #fff; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; text-transform: uppercase; text-decoration: none; display: inline-block; border: solid 1px #b0bdc8; background: rgba(64, 93, 118, 0.8); transition: all 0.3s ease; }
+.MemberBanner_sec .leftside a:hover { background: #139346; color: #fff; border: solid 1px #139346; }
+/*Added by Henry on 8 Feb 2017*/
+.MemberBanner_sec .rightside2 { width: 30%; float: right; position: relative; }
+.MemberBanner_sec .rightside2 h1 { font-size: 36px; color: #000; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 800; text-transform: margin: 0px; line-height: 34px;}
+.MemberBanner_sec .rightside2 h1 span{ color: #000; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600;}
+.MemberBanner_sec .rightside2 h3 {  padding: 300px 0px 26px 0px; text-align: center; font-size: 36px; color: #000; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; text-transform: margin: 0px; line-height: 40px;}
+.MemberBanner_sec .rightside2 h3 span { font-size: 23px; color: #000; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; display: block; }
+.MemberBanner_sec .rightside2 p { padding: 16px 0px 26px 0px; font-size: 16px; color: #fff; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; font-style: italic; margin: 0px; word-spacing: 2px; line-height: 22px; }
+.MemberBanner_sec .rightside2 a { padding: 11px 16px; font-size: 14px; color: #fff; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; text-transform: uppercase; text-decoration: none; display: inline-block; border: solid 1px #b0bdc8; background: rgba(64, 93, 118, 0.8); transition: all 0.3s ease; clear: right;}
+.MemberBanner_sec .rightside2 a:hover { background: #139346; color: #fff; border: solid 1px #139346; }
+.MemberBanner_sec .rightside2 .Center { text-align: center; }
+
+.MemberBanner_sec .rightside { width: 68.36%; float: right; position: relative; }
+.MemberBanner_sec .rightside .bx-wrapper { position: relative; z-index: 1; }
+.MemberBanner_sec .rightside ul { list-style: none; margin: 0px; }
+.MemberBanner_sec .rightside li { padding: 0px; margin: 0; float: none!important; }
+.MemberBanner_sec .rightside #slider { width: 100%; float: right;  position: relative; z-index: 1; }
+.MemberBanner_sec .rightside .Slider .text { padding: 25px 47px 21px 30px; position: absolute; bottom: 0px; left: 0px; width: 100%; background: rgba(0, 0, 0, 0.7); }
+.MemberBanner_sec .rightside .Slider .text .Icon { width: 38%; float: left; }
+.MemberBanner_sec .rightside .Slider .text ul { list-style: none; margin: 0px; }
+.MemberBanner_sec .rightside .Slider .text li { float: left!important; padding: 0px 30px 0px 10px; margin: 0px; }
+.MemberBanner_sec .rightside .Slider .text li a { display: block; font-size: 14px; color: #fff; text-decoration: none; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; transition: all 0.3s ease;}
+.MemberBanner_sec .rightside .Slider .text li:last-child { padding: 0px; }
+.MemberBanner_sec .rightside .Slider .text li:hover a { color: #139346!important;}
+.MemberBanner_sec .rightside .Slider .text li a .fa { padding: 13px; margin-right: 10px; color: #fff; border-radius: 50px; border: solid 2px #fff; transition: all 0.3s ease; }
+.MemberBanner_sec .rightside .Slider .text li:hover a .fa { background: #139346; color: #fff; border: solid 2px #139346; }
+.MemberBanner_sec .rightside .Slider .text li:last-child { padding-right: 0px; padding-left: 0px;}
+.MemberBanner_sec .rightside .Slider .text .Lorem { float: right; width: 31%; }
+.MemberBanner_sec .rightside .Slider .text .Lorem p { padding-top: 5px; font-size: 18px; color: #fff; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; text-transform: uppercase; text-align: right; line-height: 19px; }
+.MemberBanner_sec .rightside .Slider .text .Lorem p span { font-size: 14px; text-align: right; color: #139346; display: block; text-transform: capitalize;}
+.MemberBanner_sec .rightside .prevBtn { width: 42px; height: 42px; display: block; text-indent: -9999px; background: url(../img/prev-arrow.png) no-repeat; position: absolute; top: 213px; left: 49px;  z-index: 1; opacity: 0.5; transition: opacity 0.3s ease; }
+.MemberBanner_sec .rightside .prevBtn:hover {  opacity: 1; }	
+.MemberBanner_sec .rightside .nextBtn { width: 42px; height: 42px; display: block; text-indent: -9999px; background: url(../img/next-arrow.png) no-repeat; position: absolute; top: 213px; right: 47px;  z-index: 1; opacity: 0.5; transition: opacity 0.3s ease; }
+.MemberBanner_sec .rightside .nextBtn:hover { opacity: 1; }	
+.MemberBanner_sec .rightside .Shadow { position: absolute; bottom: -3px; left: -25px; max-width: none; }
+
+/* <<< Reference Member Banner  Section >>> */ /*Added by Henry on 8 Feb 2017*/
+.ReferenceMemberBanner_sec { width: 100%; background: url(../img/ReferenceMemberBanner.jpg) top center no-repeat; height: 1007px; position: relative; background-size: cover; }
+.ReferenceMemberBanner_sec .bannerside { width: 100%; position: absolute; top: 256px; left: 0px; }
+.ReferenceMemberBanner_sec .Center { max-width: 1100px; margin: auto; }
+.ReferenceMemberBanner_sec .Slider .text { padding: 25px 47px 21px 30px; position: absolute; bottom: 0px; left: 0px; width: 100%; background: rgba(0, 0, 0, 0.7); }
+.ReferenceMemberBanner_sec .Slider .text .Icon { width: 38%; float: left; }
+.ReferenceMemberBanner_sec .Slider .text ul { list-style: none; margin: 0px; }
+.ReferenceMemberBanner_sec .Slider .text li { float: left!important; padding: 0px 30px 0px 10px; margin: 0px; }
+.ReferenceMemberBanner_sec .Slider .text li a { display: block; font-size: 14px; color: #fff; text-decoration: none; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; transition: all 0.3s ease;}
+.ReferenceMemberBanner_sec .Slider .text li:last-child { padding: 0px; }
+.ReferenceMemberBanner_sec .Slider .text li:hover a { color: #139346!important;}
+.ReferenceMemberBanner_sec .Slider .text li a .fa { padding: 13px; margin-right: 10px; color: #fff; border-radius: 50px; border: solid 2px #fff; transition: all 0.3s ease; }
+.ReferenceMemberBanner_sec .Slider .text li:hover a .fa { background: #139346; color: #fff; border: solid 2px #139346; }
+.ReferenceMemberBanner_sec .Slider .text li:last-child { padding-right: 0px; padding-left: 0px;}
+.ReferenceMemberBanner_sec .Slider .text .Lorem { float: right; width: 31%; }
+.ReferenceMemberBanner_sec .Slider .text .Lorem p { padding-top: 5px; font-size: 18px; color: #fff; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; text-transform: uppercase; text-align: right; line-height: 19px; }
+.ReferenceMemberBanner_sec  .Slider .text .Lorem p span { font-size: 14px; text-align: right; color: #139346; display: block; text-transform: capitalize;}
+
+.ReferenceMemberBanner_sec .leftside { padding: 92px 0px 0px 0px; width: 35.90%; float: left; }
+.ReferenceMemberBanner_sec .leftside h1 { font-size: 36px; color: #fff; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 800; text-transform: margin: 0px; line-height: 34px;}
+.ReferenceMemberBanner_sec .leftside h1 span{ color: #139346; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600;}
+.ReferenceMemberBanner_sec .leftside h3 { font-size: 36px; color: #fff; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 800; text-transform: margin: 0px; line-height: 34px;}
+.ReferenceMemberBanner_sec .leftside h3 span { color: #139346; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; display: block; }
+.ReferenceMemberBanner_sec .leftside p { padding: 16px 0px 26px 0px; font-size: 16px; color: #fff; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; font-style: italic; margin: 0px; word-spacing: 2px; line-height: 22px; }
+.ReferenceMemberBanner_sec .leftside a { padding: 11px 16px; font-size: 14px; color: #fff; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; text-transform: uppercase; text-decoration: none; display: inline-block; border: solid 1px #b0bdc8; background: rgba(64, 93, 118, 0.8); transition: all 0.3s ease; }
+.ReferenceMemberBanner_sec .leftside a:hover { background: #139346; color: #fff; border: solid 1px #139346; }
+.ReferenceMemberBanner_sec .rightside2 { width: 30%; float: right; position: relative; }
+.ReferenceMemberBanner_sec .rightside2 h1 { font-size: 36px; color: #000; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 800; text-transform: margin: 0px; line-height: 34px;}
+.ReferenceMemberBanner_sec .rightside2 h1 span{ color: #000; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600;}
+.ReferenceMemberBanner_sec .rightside2 h3 {  padding: 300px 0px 26px 0px; text-align: center; font-size: 36px; color: #000; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; text-transform: margin: 0px; line-height: 40px;}
+.ReferenceMemberBanner_sec .rightside2 h3 span { font-size: 23px; color: #000; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; display: block; }
+.ReferenceMemberBanner_sec .rightside2 p { padding: 16px 0px 26px 0px; font-size: 16px; color: #fff; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; font-style: italic; margin: 0px; word-spacing: 2px; line-height: 22px; }
+.ReferenceMemberBanner_sec .rightside2 a { padding: 11px 16px; font-size: 14px; color: #fff; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 600; text-transform: uppercase; text-decoration: none; display: inline-block; border: solid 1px #b0bdc8; background: rgba(64, 93, 118, 0.8); transition: all 0.3s ease; clear: right;}
+.ReferenceMemberBanner_sec .rightside2 a:hover { background: #139346; color: #fff; border: solid 1px #139346; }
+.ReferenceMemberBanner_sec .rightside2 .Center { text-align: center; }
+
+.ReferenceMemberBanner_sec .rightside { width: 68.36%; float: right; position: relative; }
+.ReferenceMemberBanner_sec .rightside .bx-wrapper { position: relative; z-index: 1; }
+.ReferenceMemberBanner_sec .rightside ul { list-style: none; margin: 0px; }
+.ReferenceMemberBanner_sec .rightside li { padding: 0px; margin: 0; float: none!important; }
+.ReferenceMemberBanner_sec .rightside #slider { width: 100%; float: right;  position: relative; z-index: 1; }
+.ReferenceMemberBanner_sec .rightside .Slider .text { padding: 25px 47px 21px 30px; position: absolute; bottom: 0px; left: 0px; width: 100%; background: rgba(0, 0, 0, 0.7); }
+.ReferenceMemberBanner_sec .rightside .Slider .text .Icon { width: 38%; float: left; }
+.ReferenceMemberBanner_sec .rightside .Slider .text ul { list-style: none; margin: 0px; }
+.ReferenceMemberBanner_sec .rightside .Slider .text li { float: left!important; padding: 0px 30px 0px 10px; margin: 0px; }
+.ReferenceMemberBanner_sec .rightside .Slider .text li a { display: block; font-size: 14px; color: #fff; text-decoration: none; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; transition: all 0.3s ease;}
+.ReferenceMemberBanner_sec .rightside .Slider .text li:last-child { padding: 0px; }
+.ReferenceMemberBanner_sec .rightside .Slider .text li:hover a { color: #139346!important;}
+.ReferenceMemberBanner_sec .rightside .Slider .text li a .fa { padding: 13px; margin-right: 10px; color: #fff; border-radius: 50px; border: solid 2px #fff; transition: all 0.3s ease; }
+.ReferenceMemberBanner_sec .rightside .Slider .text li:hover a .fa { background: #139346; color: #fff; border: solid 2px #139346; }
+.ReferenceMemberBanner_sec .rightside .Slider .text li:last-child { padding-right: 0px; padding-left: 0px;}
+.ReferenceMemberBanner_sec .rightside .Slider .text .Lorem { float: right; width: 31%; }
+.ReferenceMemberBanner_sec .rightside .Slider .text .Lorem p { padding-top: 5px; font-size: 18px; color: #fff; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; text-transform: uppercase; text-align: right; line-height: 19px; }
+.ReferenceMemberBanner_sec .rightside .Slider .text .Lorem p span { font-size: 14px; text-align: right; color: #139346; display: block; text-transform: capitalize;}
+.ReferenceMemberBanner_sec .rightside .prevBtn { width: 42px; height: 42px; display: block; text-indent: -9999px; background: url(../img/prev-arrow.png) no-repeat; position: absolute; top: 213px; left: 49px;  z-index: 1; opacity: 0.5; transition: opacity 0.3s ease; }
+.ReferenceMemberBanner_sec .rightside .prevBtn:hover {  opacity: 1; }	
+.ReferenceMemberBanner_sec .rightside .nextBtn { width: 42px; height: 42px; display: block; text-indent: -9999px; background: url(../img/next-arrow.png) no-repeat; position: absolute; top: 213px; right: 47px;  z-index: 1; opacity: 0.5; transition: opacity 0.3s ease; }
+.ReferenceMemberBanner_sec .rightside .nextBtn:hover { opacity: 1; }	
+.ReferenceMemberBanner_sec .rightside .Shadow { position: absolute; bottom: -3px; left: -25px; max-width: none; }
+
+
+/*Added by Henry on 22 Feb 2017*/
+.Banner_sec2 { width: 100%; background: url(../img/Banner-bg2.jpg) top center no-repeat; height: 1007px; position: relative; background-size: cover; }
+.Banner_sec2 .bannerside { width: 100%; position: absolute; top: 356px; left: 0px; }
+.Banner_sec2 .Center { max-width: 1100px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; margin: auto; overflow: hidden; text-align: center; }
+.Banner_sec2 .Center h1 { font-size: 60px; color: #000; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 60px; letter-spacing: -0.4px; }
+
+
+/* <<< bg color>>> */
+/*Edit by Henry on 11 Sep 2016 
+.bgcolor {  height: 74px; width: 100%; background: rgba(249,250,251,1); background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249,250,251,1)), color-stop(0%, rgba(249,250,251,1)), color-stop(100%, rgba(225,228,231,1)));
+	background: linear-gradient(to bottom, rgba(249,250,251,1) 0%, rgba(249,250,251,1) 0%, rgba(225,228,231,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9fafb', endColorstr='#e1e4e7', GradientType=0 ); }
+*/
+.bgcolor {  height: 0; width: 100%; background: rgba(249,250,251,1); background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249,250,251,1)), color-stop(0%, rgba(249,250,251,1)), color-stop(100%, rgba(225,228,231,1)));
+	background: linear-gradient(to bottom, rgba(249,250,251,1) 0%, rgba(249,250,251,1) 0%, rgba(225,228,231,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9fafb', endColorstr='#e1e4e7', GradientType=0 ); }
+	
+/* <<< Added by Henry on 13/11/2016 >>>  */
+.resize{
+		max-width: 350px;
+		max-height: 850px;
+        margin: auto;
+
+}
+.resizeSmall{
+		max-width: 350px;
+		max-height: 850px;
+        margin: auto;
+
+}
+.resizeBig{
+		max-width: 400px;
+		max-height: 850px;
+        margin: auto;
+
+}
+.resizeBoth{
+		max-width: 550px;
+		max-height: 850px;
+        margin: auto;
+
+}
+
+
+	
+	/* <<< Container >>> */
+	#Container { overflow: hidden; width: 100%; }
+
+	/* <<< About Section >>> */
+	/*Added by Henry on 2 Jan 2017*/
+	/* Edit by Henry on 8 Feb 2017
+	.About_sec { padding: 115px 0px 88px 0px;  width: 100%;  height: auto; background: url(../img/About_sec_backgroud.jpg) top center no-repeat;  position: relative; background-size: cover;  }
+	*/
+	.About_sec { padding: 125px 0px 88px 0px; max-width: 100%;  background: url(../img/About_sec_backgroud.jpg) top center no-repeat; overflow: hidden; background-size: cover;}
+	/*Hidden by Henry on 2 Jan 2017*/
+	/*.About_sec { padding: 115px 0px 88px 0px ; width: 100%; overflow: hidden; } */
+	/*Edit by Henry on 11 Sep 2016 
+	.About_sec .Center { max-width: 1100px; margin: auto; overflow: hidden; text-align: center; }
+	*/
+	.About_sec .Center { max-width: 1100px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; margin: auto; overflow: hidden; text-align: center; }
+	/*Edit by Henry on 25 Sep 2016 */
+	.About_sec .Center h1 { font-size: 60px; color: #000; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 60px; letter-spacing: -0.4px; }
+	.About_sec h2 { padding-bottom: 44px; font-size: 40px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 46px; }
+	/* Hidden by Henry on 11 Jun 2017 .About_sec h2 { padding: 14px 80px 13px 40px; font-size: 45px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 60px; letter-spacing: -0.4px; } */
+	/* Added by Henry on 17 Sep 2016 | Edit by Henry on 25 Sep 2016 */
+	.About_sec h2 span{ font-size: 20px; color: #000; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 60px; letter-spacing: -0.4px; }
+	.About_sec h3 { font-size: 35px; color: #000; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 60px; letter-spacing: -0.4px; }
+	.About_sec a { font-size: 40px; font-weight:bold; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif;  text-decoration:blink ; color: black; }
+	.About_sec a:hover { font-size: 40px; font-weight:bold; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; text-decoration:blink; color: #139346; }
+	.About_sec p { padding: 24px 0px 35px 0px; font-size: 14px; color: #979797; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; line-height: 25px; font-weight: 400; }
+	.About_sec .MidLink a { font-size: 20px; font-weight: 400; text-decoration:underline ; color: #0000FF; }
+	.About_sec .MidLink a:hover { font-size: 20px; font-weight: 400; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; text-decoration:blink; color: black; }
+	
+	.About_sec .Line { border: solid 1px #139346; height: 2px; width: 252px; margin: auto; }
+	.About_sec .Tabside { padding: 10px 0px; width: 100%;}
+	.About_sec .Tabside ul { list-style: none; margin: 0px; padding-bottom: 39px; }
+	.About_sec .Tabside li { float: none; margin: 0px -2px; display: inline-block;}
+	.About_sec .Tabside li a { padding: 14px 40px 13px 40px; font-size: 18px; color: #989898; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; text-decoration: none; border: solid 1px #d5d5d5; display: block; transition: all 0.3s ease; }
+	
+	.About_sec .Tabside .tabcontent { float: none; margin: 0px 10px; display: inline-block;}
+	.About_sec .Tabside li a:hover, .About_sec .Tabside li a.activeLink { border: solid 1px #139346; background: #139346; color: #fff;}
+	.About_sec .Tabside .TabImage { width: 43.63%; float: left; position: relative; }
+
+	/* <<< Added by Henry on 13/11/2016 >>>  */
+	.About_sec .Leftside { width: 50%; float: left; }	
+	.About_sec .Leftside .TabImage { width: 100%; float: left; position: relative; }
+	.About_sec .Leftside .TabImage .img1 { position: relative; top: 0px; background-position: 25px 223px; text-align: center; }
+	.About_sec .Leftside .TabImage .img1 img { padding: 5px; border: solid 1px #ececec; background: #fff; margin: auto; text-align: center; }
+	.About_sec .Leftside .Button {  padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 1; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 100px; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+	.About_sec .Leftside .RedButton { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 1; text-align: center; background: #FF0000; border: 0px; text-transform:uppercase; width: 15%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+	
+	/* <<< Added by Henry on 14/11/2016 >>>  */
+	.About_sec .Rightside { padding-top: 12px; width: 50%; float: right;}
+	.About_sec .Rightside .Description p { font-size: 20px; font-weight:bold; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; color: black;font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; padding: 0px; margin: 0px 0px 25px 0px;  }
+	/* Hidden by Henry on 11 Jun 2017 	.About_sec .Rightside .Description p { padding: 21px 0px 4px 0px; font-size: 22px; color: #000; margin: 0px; font-family:'helvetica', 'Microsoft JhengHei'; line-height: 25px; } */
+	.About_sec .Rightside .Description h3 { font-size: 30px; font-weight:bold; color: #000; margin: 0px; font-family:'helvetica', 'Microsoft JhengHei'; line-height: 29px; }
+	.About_sec .Rightside .Description h3 span { padding-left: 3px; font-weight:normal; font-size: 25px;  display: block; }
+	.About_sec .Rightside .smallButton { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 1; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 15%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+	.About_sec .Rightside .Button { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 1; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 30%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+	.About_sec .Rightside .RedButton { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 1; text-align: center; background: #FF0000; border: 0px; text-transform:uppercase; width: 15%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+	.About_sec .Rightside input.field { padding: 18px 20px 17px 20px; font-size: 14px; color: #979797; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; border: 0px; width: 100%; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424;
+		-o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; }
+	.About_sec .Rightside input.smallField { padding: 8px 20px 8px 20px; font-size: 14px; color: #979797; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; border: 0px; width: 40%; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424;
+		-o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; }
+	
+	.About_sec .Leftside.Tabside .TabImage { width: 100%; }
+	
+	
+	.About_sec .Tabside .TabImage .img1 { position: relative; top: 0px; left: 42px; height: 0px; background-position: 25px 223px; }
+	.About_sec .Tabside .TabImage .img1 img { padding: 5px; border: solid 1px #ececec; background: #fff;  }
+	.About_sec .Tabside .TabImage .img2 { position: absolute; top: 40px; left: 2px; height: 260px; background: url(../img/about-shadow.png) bottom center no-repeat; background-position: 0px 223px; }
+	.About_sec .Tabside .TabImage .img2 img { padding: 5px; border: solid 1px #ececec; background: #fff;  }
+	.About_sec .Tabside .Description { width: 54.3%; float: right; text-align: left; margin-top: -6px;}
+	.About_sec .Tabside .Description h3 { font-size: 30px; font-weight:bold; color: #000; margin: 0px; font-family:'helvetica', 'Microsoft JhengHei'; line-height: 29px; }
+	.About_sec .Tabside .Description h3 span { padding-left: 3px; font-size: 25px; color: #139346; display: block; }
+	.About_sec .Tabside .Description p { padding: 21px 0px 4px 0px; font-size: 22px; color: #000; margin: 0px; font-family:'helvetica', 'Microsoft JhengHei'; line-height: 25px; }
+	.About_sec .Tabside .Description p .cyan { font-size: 16px; color: #08c2ff; }
+	/* <<< Added by Henry on 11/9/2016 >>>  */
+	.About_sec .Tabside .Button { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 1; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 30%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+	.About_sec .Tabside .RedButton { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 1; text-align: center; background: #FF0000; border: 0px; text-transform:uppercase; width: 30%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+	.About_sec .Tabside .LagerButton { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 1; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 40%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+	
+
+	
+	
+	/* <<< Services Section >>> */
+	/* Edit by Henry on 2 Jan 2017 */
+	.Services_sec{ padding: 114px 0px 90px 0px ; width: 100%; overflow: hidden; background: url(../img/background.jpg) top center no-repeat; background-size: cover; }
+	.Services_sec .Center { max-width: 1000px; margin: auto; overflow: hidden; text-align: center; }
+	/*Added by Henry on 5 Jan 2017 */
+	.Services_sec h2 { font-size: 45px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 60px; letter-spacing: -0.4px; }
+	.Services_sec h2 span{ font-size: 20px; color: #979797; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; text-transform: uppercase; line-height: 60px; letter-spacing: -0.4px; }
+	/* Edit by 5 Jan 2017
+	.Services_sec h2 { font-size: 45px; color: #fff; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; 	line-height: 60px; }
+	.Services_sec h2 span { font-size: 20px; color: #c2cdd6; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; line-height: 25px; font-weight: 400; }
+	*/
+	
+	.Services_sec p { padding: 25px 0px 35px 0px; font-size: 22px; color: #d8dfe5; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; line-height: 25px; font-weight: 400; }
+	.Services_sec .Line { border: solid 1px #139346; height: 2px; width: 252px; margin: auto; }
+	.Services_sec .Serviceside { padding: 76px 0px 30px 0px; width: 100%; overflow: hidden; }
+	.Services_sec .Serviceside ul { list-style: none; margin: 0px }
+	.Services_sec .Serviceside li { float: left; padding: 0px; margin: 0px 40px 0px 0px; text-align: center; width: 245px; }
+	.Services_sec .Serviceside li:last-child { margin-right: 0px;}
+	/*Edit by Henry on 11 Sep 2016 
+	.Services_sec .Serviceside li.Development { padding: 44px 0px 161px 0px; background: url(../img/Development-bg.jpg) no-repeat;box-shadow: 1px 4px 7px -4px rgba(0,0,0,0.75); }	.Services_sec .Serviceside li.Development a { text-decoration: none; background: url(../img/dogtag-icn.png) top center no-repeat; display: block; }
+	*/
+	.Services_sec .Serviceside li.Development { padding: 44px 0px 100px 0px; }	
+	.Services_sec .Serviceside li.Development a { text-decoration: none; background: url(../img/desgin-icn.png) top center no-repeat; display: block; }
+	.Services_sec .Serviceside li.Development h4 { padding: 138px 0px 0px 0px;  font-size: 17px; color: #000; text-decoration: none; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400;  }
+	/* <<< Hided by Henry on 1/5/2017 >>>  
+	.Services_sec .Serviceside li.Development a:hover h4 { color: #139346; background: url(../img/desgin-hover-icn.png) top center no-repeat; } */
+	/*Edit by Henry on 11 Sep 2016 
+	.Services_sec .Serviceside li.Desdin { padding: 44px 0px 159px 0px;background: url(../img/desgin-bg.jpg) no-repeat; box-shadow: 1px 4px 7px -4px rgba(0,0,0,0.75);  }
+	*/
+	.Services_sec .Serviceside li.Desdin { padding: 44px 0px 100px 0px; }
+	.Services_sec .Serviceside li.Desdin a { text-decoration: none; background: url(../img/dogtag-icn.png) top center no-repeat; display: block; }
+	.Services_sec .Serviceside li.Desdin h4 { padding: 138px 0px 0px 0px;  font-size: 18px; color: #000; text-decoration: none; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400;  }
+	/* <<< Hided by Henry on 1/5/2017 >>>  
+	.Services_sec .Serviceside li.Desdin a:hover h4 { color: #139346; background: url(../img/dogtag-hover-icn.png) top center no-repeat; } */
+	/*Edit by Henry on 11 Sep 2016 
+	.Services_sec .Serviceside li.Concept { padding: 44px 0px 159px 0px; background: url(../img/concept-bg.jpg) no-repeat; box-shadow: 1px 4px 7px -4px rgba(0,0,0,0.75);  }
+	*/
+	.Services_sec .Serviceside li.Concept { padding: 44px 0px 100px 0px;}
+	.Services_sec .Serviceside li.Concept a { text-decoration: none; background: url(../img/view_QR_code-icn.png) top center no-repeat; display: block; }
+	.Services_sec .Serviceside li.Concept h4 { padding: 138px 0px 0px 0px; font-size: 18px; color: #000; text-decoration: none; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; }
+	/* <<< Hided by Henry on 1/5/2017 >>>  
+	.Services_sec .Serviceside li.Concept a:hover h4 { color: #139346; background: url(../img/view_QR_code-hover-icn.png) top center no-repeat; }*/
+	/*Edit by Henry on 11 Sep 2016 
+	.Services_sec .Serviceside li.System { padding: 44px 0px 159px 0px;background: url(../img/systam-bg.jpg) no-repeat; box-shadow: 1px 4px 7px -4px rgba(0,0,0,0.75);  }
+	*/
+	.Services_sec .Serviceside li.System { padding: 44px 0px 100px 0px; }
+	.Services_sec .Serviceside li.System a { text-decoration: none; background: url(../img/email-icn.png) top center no-repeat; display: block; }
+	.Services_sec .Serviceside li.System h4 { padding: 138px 0px 0px 0px;  font-size: 18px; color: #000; text-decoration: none; letter-spacing: -1px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400;  }
+	/* <<< Hided by Henry on 1/5/2017 >>>  */
+	/* .Services_sec .Serviceside li.System a:hover h4 { color: #ff9408; background: url(../img/email-hover-icn.png) top center no-repeat;} */
+	
+	/* <<< Added by Henry on 9/10/2016 >>>  */
+	.Services_sec .Tabside { padding: 20px 0px; width: 100%;}
+	.Services_sec .Tabside ul { list-style: none; margin: 0px; padding-bottom: 59px; }
+	.Services_sec .Tabside li { float: none; padding: 0px; margin: 0px -2px; display: inline-block;}
+	.Services_sec .Tabside li a { padding: 14px 40px 13px 40px; font-size: 16px; color: #989898; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; text-decoration: none; text-transform: uppercase; border: solid 1px #d5d5d5; display: block; transition: all 0.3s ease; }
+	.Services_sec .Tabside li a:hover, .Services_sec .Tabside li a.activeLink { border: solid 1px #139346; background: #139346; color: #fff;}
+	.Services_sec .Tabside .TabImage { width: 23.63%; float: noness; position: relative; }
+	.Services_sec .Tabside .TabImage .img1 { position: relative; top: 0px; left: 42px; height: 260px; background-position: 25px 223px; }
+	.Services_sec .Tabside .TabImage .img1 img { padding: 5px; border: solid 1px #ececec; background: #fff;  }
+	.Services_sec .Tabside .TabImage .img2 { position: relative; top: 40px; left: 2px; height: 260px; background: url(../img/about-shadow.png) bottom center no-repeat; background-position: 0px 223px; }
+	.Services_sec .Tabside .TabImage .img2 img { padding: 5px; border: solid 1px #ececec; background: #fff;  }
+	.Services_sec .Tabside .Description { width: 100%; float: right; text-align: left; margin-top: 0px;}
+	.Services_sec .Tabside .Description h3 { padding: 14px 13px 13px 13px; font-size: 25px; font-weight:bold; color: black; margin: 0px; font-family:'helvetica', 'Microsoft JhengHei'; line-height: 29px;  }
+	/*Edited by Henry on 8 Feb 2017*/
+	.Services_sec .Tabside .Description h3 span { padding-left: 3px; font-weight:normal; font-size: 20px; font-family:'helvetica', 'Microsoft JhengHei'; color: #000; }
+	
+	.Services_sec .Tabside .Description img.AppStore { -ms-interpolation-mode: bicubic; border: 0; vertical-align: middle; display: block;  }
+	
+	.Services_sec .Center .Tabside .Description h3 figure
+		{
+			width:25%;
+			float:left;
+			margin:0px;
+			text-align:center;
+			padding:0px;
+
+			height:auto;
+		}
+	
+	/* Added by Henry on 15 Jan 2017*/
+	.Services_sec .Tabside .Description.Center h3 { max-width: 1100px; margin: auto; overflow: hidden; text-align: center; }
+
+	.Services_sec .Tabside .Description p { padding: 21px 0px 4px 0px; font-size: 22px; color: black; margin: 0px; font-family:'helvetica', 'Microsoft JhengHei'; line-height: 25px; }
+	.Services_sec .Tabside .Description p .cyan { font-size: 16px; color: #08c2ff; }
+	
+	/* Added by Henry on 24 May 2017*/
+	.HowToUse_sec{ padding: 114px 0px 90px 0px ; width: 100%; overflow: hidden; background: url(../img/background.jpg) top center no-repeat; background-size: cover; }
+	.HowToUse_sec .Center { max-width: 850px; margin: auto; overflow: hidden; text-align: center; }
+	/*Added by Henry on 5 Jan 2017 */
+	.HowToUse_sec h2 { font-size: 45px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 60px; letter-spacing: -0.4px; }
+	.HowToUse_sec h2 span{ font-size: 20px; color: #979797; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; text-transform: uppercase; line-height: 60px; letter-spacing: -0.4px; }
+	.HowToUse_sec a { font-size: 20px; font-weight: 400; text-decoration:underline ; color: #0000FF; }
+	.HowToUse_sec a:hover { font-size: 20px; font-weight: 400; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; text-decoration:blink; color: black; }
+	.HowToUse_sec p { padding: 25px 0px 35px 0px; font-size: 22px; color: #d8dfe5; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; line-height: 25px; font-weight: 400; }
+	.HowToUse_sec .Line { border: solid 1px #139346; height: 2px; width: 252px; margin: auto; }
+	.HowToUse_sec .Serviceside { padding: 76px 0px 30px 0px; width: 100%; overflow: hidden; }
+	.HowToUse_sec .Serviceside ul { list-style: none; margin: 0px }
+	.HowToUse_sec .Serviceside li { float: left; padding: 0px; margin: 0px 40px 0px 0px; text-align: center; width: 245px; }
+
+	.HowToUse_sec .Serviceside li:last-child { margin-right: 0px;}
+	.HowToUse_sec .Serviceside li.Development { padding: 44px 0px 100px 0px; }	
+	.HowToUse_sec .Serviceside li.Development a { text-decoration: none; background: url(../img/desgin-icn.png) top center no-repeat; display: block; }
+	.HowToUse_sec .Serviceside li.Development h4 { padding: 138px 0px 0px 0px;  font-size: 17px; color: #000; text-decoration: none; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400;  }
+	
+	/*Add by Henry on 13 Jul 2018 */
+	.HowToUse_sec .Serviceside li.Development_en { padding: 44px 0px 100px 0px; }	
+	.HowToUse_sec .Serviceside li.Development_en a { text-decoration: none; background: url(../img_en/desgin-icn_en.png) top center no-repeat; display: block; }
+	.HowToUse_sec .Serviceside li.Development_en h4 { padding: 138px 0px 0px 0px;  font-size: 17px; color: #000; text-decoration: none; font-weight: 400;  }
+	
+	.HowToUse_sec .Serviceside li.Desdin { padding: 44px 0px 100px 0px; }
+	.HowToUse_sec .Serviceside li.Desdin a { text-decoration: none; background: url(../img/dogtag-icn.png) top center no-repeat; display: block; }
+	.HowToUse_sec .Serviceside li.Desdin h4 { padding: 138px 0px 0px 0px;  font-size: 18px; color: #000; text-decoration: none; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400;  }
+	
+	/*Add by Henry on 14 Jul 2018 */
+	.HowToUse_sec .Serviceside li.Desdin_en { padding: 44px 0px 100px 0px; }
+	.HowToUse_sec .Serviceside li.Desdin_en a { text-decoration: none; background: url(../img_en/dogtag-icn_en.png) top center no-repeat; display: block; }
+	.HowToUse_sec .Serviceside li.Desdin_en h4 { padding: 138px 0px 0px 0px;  font-size: 18px; color: #000; text-decoration: none; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400;  }
+	
+	.HowToUse_sec .Serviceside li.Concept { padding: 44px 0px 100px 0px;}
+	.HowToUse_sec .Serviceside li.Concept a { text-decoration: none; background: url(../img/view_QR_code-icn.png) top center no-repeat; display: block; }
+	.HowToUse_sec .Serviceside li.Concept h4 { padding: 138px 0px 0px 0px; font-size: 18px; color: #000; text-decoration: none; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; }
+	
+	/*Add by Henry on 14 Jul 2018 */
+	.HowToUse_sec .Serviceside li.Concept_en { padding: 44px 0px 100px 0px;}
+	.HowToUse_sec .Serviceside li.Concept_en a { text-decoration: none; background: url(../img_en/view_QR_code-icn_en.png) top center no-repeat; display: block; }
+	.HowToUse_sec .Serviceside li.Concept_en h4 { padding: 138px 0px 0px 0px; font-size: 18px; color: #000; text-decoration: none; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; }	
+	
+	.HowToUse_sec .Serviceside li.System { padding: 44px 0px 100px 0px; }
+	.HowToUse_sec .Serviceside li.System a { text-decoration: none; background: url(../img/email-icn.png) top center no-repeat; display: block; }
+	.HowToUse_sec .Serviceside li.System h4 { padding: 138px 0px 0px 0px;  font-size: 18px; color: #000; text-decoration: none; letter-spacing: -1px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400;  }
+	/* Added by Henry on 25 May 2017*/
+	.HowToUse_sec .Serviceside .ytplayer {width:640px; height:360px;}
+	.HowToUse_sec .Serviceside .video-container { position: relative;padding-bottom: 56.25%;padding-top: 30px; padding-right: 50px;height: 0; overflow: hidden;}
+	.HowToUse_sec .Serviceside .video-container iframe,
+	.HowToUse_sec .Serviceside .video-container object,
+	.HowToUse_sec .Serviceside .video-container embed {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+
+	.HowToUse_sec .Serviceside .RegisterPetButton { background: url(../img/desgin-icn.png); border: none; color: white; padding: 81px 62.5px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;}
+	.HowToUse_sec .Serviceside .ActivateQRCodeButton { background: url(../img/dogtag-icn.png); border: none; color: white; padding: 81px 62.5px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; }
+	.HowToUse_sec .Serviceside .UseQRCodeButton { background: url(../img/view_QR_code-icn.png); border: none; color: green; padding: 81px 62.5px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; }
+	
+	
+	/* <<< Pricing Section >>> */
+	/* Added by Henry on 5 Jan 2017*/
+	.Pricing_sec { padding: 115px 0px 88px 0px;  width: 100%;  background: url(../img/Pricing_background.jpg) top center no-repeat;  position: relative; background-size: cover; }
+	/* 	Edit by Henry on 2 Jan 2017 | Hidden by Henry on 5 Jan 2017
+	.Pricing_sec { padding: 112px 0px 108px 0px ; width: 100%; background: url(../img/background.jpg); overflow: hidden; background: #ececec; } */
+	.Pricing_sec .Center { max-width: 1100px; margin: auto; overflow: hidden; text-align: center; }
+	.Pricing_sec h2 { font-size: 45px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 60px; }
+	/*Added by Henry on 10 Oct 2016 | Edit by Henry on 25 Sep 2016 */
+	.Pricing_sec h2 span{ font-size: 40px; color: #979797; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; text-transform: uppercase; line-height: 60px; letter-spacing: -0.4px; }
+	
+	.Pricing_sec p { padding: 26px 0px 35px 0px; font-size: 14px; color: #8f8f8f; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; line-height: 25px; font-weight: 400; }
+	.Pricing_sec  a { font-size: 20px; font-weight: 400; text-decoration:underline ; color: #0000FF; }
+	.Pricing_sec  a:hover { font-size: 20px; font-weight: 400; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; text-decoration:blink; color: black; }
+	.Pricing_sec .Line { border: solid 1px #139346; height: 2px; width: 252px; margin: auto; }
+	.Pricing_sec .Pricingside { padding: 75px 0px 0px 0px; width: 100%; overflow: hidden; text-align: initial; }
+	.Pricing_sec .Pricingside ul { list-style: none; margin: 0px; }
+	.Pricing_sec .Pricingside li { float: none; padding: 0px; margin: 0px 0px 11px 0px; height: 103px; background: #fff; text-align: center; }
+	.Pricing_sec .Pricingside li .Basic { width: 55px; float: left; display: table; height: 103px; background: #ff9408; transition: all ease 0.3s; }
+	.Pricing_sec .Pricingside li .Basic h5 { display: table-cell; vertical-align: middle; font-size: 17px; color: #2d2d2d; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; text-transform: uppercase; margin: 0px; -webkit-transform: rotate(270deg); -moz-transform: rotate(270deg); -o-transform: rotate(270deg); -ms-transform: rotate(270deg); transform: rotate(270deg); clear: none; text-align: center; }
+	.Pricing_sec .Pricingside li .Dollar { padding: 22px 0px 21px 0px; width: 205px; float: left; background: #2d2d2d; transition: all ease 0.3s;}
+	.Pricing_sec .Pricingside li .Dollar h2 { font-size: 34px; color: #ff9408; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; letter-spacing: 1px; }
+
+	.Pricing_sec .Pricingside li .Band { padding: 1px 30px; width: 173px; float: left; background: url(../img/divider.png) right 16px no-repeat; transition: all 0.3s ease; }
+	.Pricing_sec .Pricingside li .Band p { font-size: 16px; color: #979797; margin: 0px; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; text-transform: uppercase; line-height: 20px; }
+	.Pricing_sec .Pricingside li .Band p span { display: block; }
+	.Pricing_sec .Pricingside li .Band.last { background: none; }
+	.Pricing_sec .Pricingside li .Order {width: 147px; float: left; display: table; height: 103px;  }
+	.Pricing_sec .Pricingside li .Order a { font-size: 17px; color: #fff; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; text-decoration: none;  display: table-cell; vertical-align: middle; text-transform: uppercase;  background: #2d2d2d; }
+
+	.Pricing_sec .Pricingside li:hover .Basic { padding: 0px; background: #2d2d2d; }
+	.Pricing_sec .Pricingside li:hover .Basic h5 { color: #fff; }
+	.Pricing_sec .Pricingside li:hover .Band { padding: 0px; background: #2d2d2d url(../img/divider-black.png) right 16px no-repeat; height: 103px; }
+	.Pricing_sec .Pricingside li:hover .Band p { color: #fff; }
+	.Pricing_sec .Pricingside li:hover .Dollar { background: #ff9408; color: #fff; }
+	.Pricing_sec .Pricingside li:hover .Dollar h2 { color: #fff; }
+
+	.Pricing_sec .Pricingside li:hover .Order a { background: #ff9408; color: #fff; transition: all 0.3s ease;}
+
+	.Pricing_sec .Center .smallButton { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 1; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 15%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+    .Pricing_sec .Center .table{ border: 1px solid black;  margin-right: 15%; margin-left: 15%;}
+	/*.Pricing_sec .Center .table, th, td { border: 1px solid black;  margin-right: 15%; margin-left: 15%;}*/
+    
+    /* <<< Pricing Section >>> */
+	/* Added by Henry on 1 Jul 2017*/
+	.PetMan_sec { padding: 115px 0px 88px 0px;  width: 100%;  background: url(../img/PetMan_background.jpg) top center no-repeat;  position: relative; background-size: cover; }
+	/* 	Edit by Henry on 2 Jan 2017 | Hidden by Henry on 5 Jan 2017
+	.PetMan_sec { padding: 112px 0px 108px 0px ; width: 100%; background: url(../img/background.jpg); overflow: hidden; background: #ececec; } */
+	.PetMan_sec .Center { max-width: 1100px; margin: auto; overflow: hidden; text-align: center; }
+	.PetMan_sec h2 { font-size: 45px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 60px; }
+	/*Added by Henry on 10 Oct 2016 | Edit by Henry on 25 Sep 2016 */
+	.PetMan_sec h2 span{ font-size: 40px; color: #979797; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; text-transform: uppercase; line-height: 60px; letter-spacing: -0.4px; }
+	
+	.PetMan_sec p { padding: 26px 0px 35px 0px; font-size: 14px; color: #8f8f8f; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; line-height: 25px; font-weight: 400; }
+	.PetMan_sec  a { font-size: 20px; font-weight: 400; text-decoration:underline ; color: #0000FF; }
+	.PetMan_sec  a:hover { font-size: 20px; font-weight: 400; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; text-decoration:blink; color: black; }
+	.PetMan_sec .Line { border: solid 1px #139346; height: 2px; width: 252px; margin: auto; }
+	.PetMan_sec .Pricingside { padding: 75px 0px 0px 0px; width: 100%; overflow: hidden; text-align: initial; }
+	.PetMan_sec .Pricingside ul { list-style: none; margin: 0px; }
+	.PetMan_sec .Pricingside li { float: none; padding: 0px; margin: 0px 0px 11px 0px; height: 103px; background: #fff; text-align: center; }
+	.PetMan_sec .Pricingside li .Basic { width: 55px; float: left; display: table; height: 103px; background: #ff9408; transition: all ease 0.3s; }
+	.PetMan_sec .Pricingside li .Basic h5 { display: table-cell; vertical-align: middle; font-size: 17px; color: #2d2d2d; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; text-transform: uppercase; margin: 0px; -webkit-transform: rotate(270deg); -moz-transform: rotate(270deg); -o-transform: rotate(270deg); -ms-transform: rotate(270deg); transform: rotate(270deg); clear: none; text-align: center; }
+	.PetMan_sec .Pricingside li .Dollar { padding: 22px 0px 21px 0px; width: 205px; float: left; background: #2d2d2d; transition: all ease 0.3s;}
+	.PetMan_sec .Pricingside li .Dollar h2 { font-size: 34px; color: #ff9408; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; letter-spacing: 1px; }
+
+	.PetMan_sec .Pricingside li .Band { padding: 1px 30px; width: 173px; float: left; background: url(../img/divider.png) right 16px no-repeat; transition: all 0.3s ease; }
+	.PetMan_sec .Pricingside li .Band p { font-size: 16px; color: #979797; margin: 0px; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; text-transform: uppercase; line-height: 20px; }
+	.PetMan_sec .Pricingside li .Band p span { display: block; }
+	.PetMan_sec .Pricingside li .Band.last { background: none; }
+	.PetMan_sec .Pricingside li .Order {width: 147px; float: left; display: table; height: 103px;  }
+	.PetMan_sec .Pricingside li .Order a { font-size: 17px; color: #fff; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; text-decoration: none;  display: table-cell; vertical-align: middle; text-transform: uppercase;  background: #2d2d2d; }
+
+	.PetMan_sec .Pricingside li:hover .Basic { padding: 0px; background: #2d2d2d; }
+	.PetMan_sec .Pricingside li:hover .Basic h5 { color: #fff; }
+	.PetMan_sec .Pricingside li:hover .Band { padding: 0px; background: #2d2d2d url(../img/divider-black.png) right 16px no-repeat; height: 103px; }
+	.PetMan_sec .Pricingside li:hover .Band p { color: #fff; }
+	.PetMan_sec .Pricingside li:hover .Dollar { background: #ff9408; color: #fff; }
+	.PetMan_sec .Pricingside li:hover .Dollar h2 { color: #fff; }
+
+	.PetMan_sec .Pricingside li:hover .Order a { background: #ff9408; color: #fff; transition: all 0.3s ease;}
+
+	.PetMan_sec .Center .smallButton { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 1; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 15%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+
+	/* <<< Reference Section >>> */
+	/* Added by Henry on 9 Apr 2019*/
+	.Reference_sec { width: 100%;  background: url(../img/Reference-bg_1.jpg) top center no-repeat; height: 980px; position: relative; background-size: cover; }
+	/*
+	.Banner_sec { width: 100%; background: url(../img/PTag.jpg) top center no-repeat; height: 1007px; position: relative; background-size: cover; }
+	
+	.Reference_sec { padding: 120px 0px 1000px 0px;  width: 100%;  background: url(../img/Reference-bg.jpg) top center no-repeat; background-size: 100% 100%; }*/
+	/*.Reference_sec { padding: 120px 0px 88px 0px;  width: 100%;  background: url(../img/PPN_Poster.jpg) top center no-repeat;  position: relative; background-size:  contain; }*/
+	/* 	Edit by Henry on 2 Jan 2017 | Hidden by Henry on 5 Jan 2017
+	.Reference_sec { padding: 112px 0px 108px 0px ; width: 100%; background: url(../img/background.jpg); overflow: hidden; background: #ececec; } */
+	.Reference_sec .Center { max-width: 1100px; margin: auto; overflow: hidden; text-align: center; }
+	.Reference_sec h2 { font-size: 45px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 60px; }
+	/*Added by Henry on 10 Oct 2016 | Edit by Henry on 25 Sep 2016 */
+	.Reference_sec h2 span{ font-size: 40px; color: #979797; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; text-transform: uppercase; line-height: 60px; letter-spacing: -0.4px; }
+	
+	.Reference_sec  a { font-size: 20px; font-weight: 400; text-decoration:underline ; color: #0000FF; }
+	.Reference_sec  a:hover { font-size: 20px; font-weight: 400; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; text-decoration:blink; color: black; }
+	.Reference_sec .Line { border: solid 1px #139346; height: 2px; width: 252px; margin: auto; }
+	.Reference_sec .Pricingside { padding: 75px 0px 0px 0px; width: 100%; overflow: hidden; text-align: initial; }
+	.Reference_sec .Pricingside ul { list-style: none; margin: 0px; }
+	.Reference_sec .Pricingside li { float: none; padding: 0px; margin: 0px 0px 11px 0px; height: 103px; background: #fff; text-align: center; }
+	.Reference_sec .Pricingside li .Basic { width: 55px; float: left; display: table; height: 103px; background: #ff9408; transition: all ease 0.3s; }
+	.Reference_sec .Pricingside li .Basic h5 { display: table-cell; vertical-align: middle; font-size: 17px; color: #2d2d2d; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; text-transform: uppercase; margin: 0px; -webkit-transform: rotate(270deg); -moz-transform: rotate(270deg); -o-transform: rotate(270deg); -ms-transform: rotate(270deg); transform: rotate(270deg); clear: none; text-align: center; }
+	.Reference_sec .Pricingside li .Dollar { padding: 22px 0px 21px 0px; width: 205px; float: left; background: #2d2d2d; transition: all ease 0.3s;}
+	.Reference_sec .Pricingside li .Dollar h2 { font-size: 34px; color: #ff9408; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; letter-spacing: 1px; }
+
+	.Reference_sec .Pricingside li .Band { padding: 1px 30px; width: 173px; float: left; background: url(../img/divider.png) right 16px no-repeat; transition: all 0.3s ease; }
+	.Reference_sec .Pricingside li .Band p { font-size: 16px; color: #979797; margin: 0px; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; text-transform: uppercase; line-height: 20px; }
+	.Reference_sec .Pricingside li .Band p span { display: block; }
+	.Reference_sec .Pricingside li .Band.last { background: none; }
+	.Reference_sec .Pricingside li .Order {width: 147px; float: left; display: table; height: 103px;  }
+	.Reference_sec .Pricingside li .Order a { font-size: 17px; color: #fff; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; text-decoration: none;  display: table-cell; vertical-align: middle; text-transform: uppercase;  background: #2d2d2d; }
+
+	.Reference_sec .Pricingside li:hover .Basic { padding: 0px; background: #2d2d2d; }
+	.Reference_sec .Pricingside li:hover .Basic h5 { color: #fff; }
+	.Reference_sec .Pricingside li:hover .Band { padding: 0px; background: #2d2d2d url(../img/divider-black.png) right 16px no-repeat; height: 103px; }
+	.Reference_sec .Pricingside li:hover .Band p { color: #fff; }
+	.Reference_sec .Pricingside li:hover .Dollar { background: #ff9408; color: #fff; }
+	.Reference_sec .Pricingside li:hover .Dollar h2 { color: #fff; }
+
+	.Reference_sec .Pricingside li:hover .Order a { background: #ff9408; color: #fff; transition: all 0.3s ease;}
+
+	.Reference_sec .Center .smallButton { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 1; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 15%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+
+    /* <<< Pricing Section >>> */
+	/* Added by Henry on 1 Jul 2017*/
+	.PetMan_sec { padding: 115px 0px 88px 0px;  width: 100%;  background: url(../img/PetMan_background.jpg) top center no-repeat;  position: relative; background-size: cover; }
+	/* 	Edit by Henry on 2 Jan 2017 | Hidden by Henry on 5 Jan 2017
+	.PetMan_sec { padding: 112px 0px 108px 0px ; width: 100%; background: url(../img/background.jpg); overflow: hidden; background: #ececec; } */
+	.PetMan_sec .Center { max-width: 1100px; margin: auto; overflow: hidden; text-align: center; }
+	.PetMan_sec h2 { font-size: 45px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 60px; }
+	/*Added by Henry on 10 Oct 2016 | Edit by Henry on 25 Sep 2016 */
+	.PetMan_sec h2 span{ font-size: 40px; color: #979797; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; text-transform: uppercase; line-height: 60px; letter-spacing: -0.4px; }
+	
+	.PetMan_sec p { padding: 26px 0px 35px 0px; font-size: 14px; color: #8f8f8f; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; line-height: 25px; font-weight: 400; }
+	.PetMan_sec  a { font-size: 20px; font-weight: 400; text-decoration:underline ; color: #0000FF; }
+	.PetMan_sec  a:hover { font-size: 20px; font-weight: 400; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; text-decoration:blink; color: black; }
+	.PetMan_sec .Line { border: solid 1px #139346; height: 2px; width: 252px; margin: auto; }
+	.PetMan_sec .Pricingside { padding: 75px 0px 0px 0px; width: 100%; overflow: hidden; text-align: initial; }
+	.PetMan_sec .Pricingside ul { list-style: none; margin: 0px; }
+	.PetMan_sec .Pricingside li { float: none; padding: 0px; margin: 0px 0px 11px 0px; height: 103px; background: #fff; text-align: center; }
+	.PetMan_sec .Pricingside li .Basic { width: 55px; float: left; display: table; height: 103px; background: #ff9408; transition: all ease 0.3s; }
+	.PetMan_sec .Pricingside li .Basic h5 { display: table-cell; vertical-align: middle; font-size: 17px; color: #2d2d2d; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; text-transform: uppercase; margin: 0px; -webkit-transform: rotate(270deg); -moz-transform: rotate(270deg); -o-transform: rotate(270deg); -ms-transform: rotate(270deg); transform: rotate(270deg); clear: none; text-align: center; }
+	.PetMan_sec .Pricingside li .Dollar { padding: 22px 0px 21px 0px; width: 205px; float: left; background: #2d2d2d; transition: all ease 0.3s;}
+	.PetMan_sec .Pricingside li .Dollar h2 { font-size: 34px; color: #ff9408; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; letter-spacing: 1px; }
+
+	.PetMan_sec .Pricingside li .Band { padding: 1px 30px; width: 173px; float: left; background: url(../img/divider.png) right 16px no-repeat; transition: all 0.3s ease; }
+	.PetMan_sec .Pricingside li .Band p { font-size: 16px; color: #979797; margin: 0px; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; text-transform: uppercase; line-height: 20px; }
+	.PetMan_sec .Pricingside li .Band p span { display: block; }
+	.PetMan_sec .Pricingside li .Band.last { background: none; }
+	.PetMan_sec .Pricingside li .Order {width: 147px; float: left; display: table; height: 103px;  }
+	.PetMan_sec .Pricingside li .Order a { font-size: 17px; color: #fff; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; text-decoration: none;  display: table-cell; vertical-align: middle; text-transform: uppercase;  background: #2d2d2d; }
+
+	.PetMan_sec .Pricingside li:hover .Basic { padding: 0px; background: #2d2d2d; }
+	.PetMan_sec .Pricingside li:hover .Basic h5 { color: #fff; }
+	.PetMan_sec .Pricingside li:hover .Band { padding: 0px; background: #2d2d2d url(../img/divider-black.png) right 16px no-repeat; height: 103px; }
+	.PetMan_sec .Pricingside li:hover .Band p { color: #fff; }
+	.PetMan_sec .Pricingside li:hover .Dollar { background: #ff9408; color: #fff; }
+	.PetMan_sec .Pricingside li:hover .Dollar h2 { color: #fff; }
+
+	.PetMan_sec .Pricingside li:hover .Order a { background: #ff9408; color: #fff; transition: all 0.3s ease;}
+
+	.PetMan_sec .Center .smallButton { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 1; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 15%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+
+
+	/* <<< Contact Section >>> */
+	.Contact_sec  {  width: 100%;  background: url(../img/Contact_us_background.jpg) top center no-repeat; position: relative; background-size: cover; }
+	/*Edit by Henry on 11 Sep 2016 
+	.Contact_sec { width: 100%; overflow: hidden; }
+	*/
+	/*Edit by Henry on 11 Sep 2016 
+	.Contact_sec .Contactside { background: url(../img/Contact-bg.jpg) top center no-repeat; background-size: cover; overflow: hidden;}
+	*/
+	.Contact_sec .Contactside { background: url(../img/Contact_us_background.jpg) top center no-repeat; background-size: cover; overflow: hidden;}
+	/*Hidden by Henry on 5 Jan 2017
+	.Contact_sec .Contactside { background: url(../img/watercolor-background.jpg) top center no-repeat; background-size: cover; overflow: hidden;} */
+	.Contact_sec .Center { padding: 115px 0px 77px 0px;  max-width: 1100px; margin: auto; overflow: hidden; text-align: center; }
+	.Contact_sec h2 { font-size: 57px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 60px;}
+	/*Added by Henry on 17 Sep 2016 */
+	.Contact_sec span { padding: 24px 0px 35px 0px; font-size: 30px; color: #000; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; line-height: 25px; font-weight: 400; }
+	.Contact_sec p { padding: 24px 0px 35px 0px; font-size: 14px; color: #ebebeb; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; line-height: 25px; font-weight: 400; }
+	.Contact_sec .Line { border: solid 1px #139346; height: 2px; width: 252px; margin: auto; }
+	.Contact_sec .Pricingside { padding: 30px 0px 10px 0px; width: 100%; overflow: hidden; text-align: initial; }
+		
+	/* <<< Map >>> */
+	.Map { position: relative; z-index: 1; width: 100%; overflow: hidden; box-shadow: 0px 1px 12px 3px #242424;
+		-webkit-box-shadow: 0px 1px 12px 3px #242424; -moz-box-shadow: 0px 1px 12px 3px #242424; -o-box-shadow: 0px 1px 12px 3px #242424; }
+		.Map #GoogleMap { height: 399px; }
+
+		/* <<< Get Section 
+		.Get_sec { width: 100%; overflow: hidden; background: url(../img/Get-bg.jpg) top center no-repeat; background-size: cover; }
+		>>> */
+		/* Added by Henry on 5 Jan 2017*/
+		.Get_sec { width: 100%; overflow: hidden; background-size: cover; }
+		/* 	Edit by Henry on 5 Jan 2017 | Hidden by Henry on 5 Jan 2017
+		.Get_sec { width: 100%; overflow: hidden; background: url(../img/Services-bg.jpg) top center no-repeat; background-size: cover; } */
+		.Get_sec .Mid { padding: 76px 0px 95px 0px; max-width: 1100px; margin: auto; overflow: hidden; }
+		/* <<< Added by Henry on 6/10/2016 >>>  */
+		.Get_sec .Mid .SmallButton { padding: 5px 0px 5px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 700; text-align: center; background: 139346; border: 0px; text-transform:uppercase; width: 10%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+		.Get_sec .Mid input.smallField { padding: 8px 20px 8px 20px; font-size: 14px; color: #979797; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; border: 0px; width: 40%; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424;
+		-o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; }
+		.Get_sec .Mid h2 { padding-bottom: 44px; font-size: 40px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 46px; }
+		.Get_sec .Mid h3 { font-size: 40px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 46px; }
+		.Get_sec .Mid p { font-size: 20px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; color: #000; padding: 0px; margin: 0px 0px 25px 0px;  }
+		.Get_sec .Mid ul { font-size: 20px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; color: #FFFFFF; }
+		.Get_sec .Mid a { font-size: 20px; font-weight: 400; text-decoration:underline ; color: #0000FF; }
+		.Get_sec .Mid a:hover { font-size: 20px; font-weight: 400; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; text-decoration:blink; color: black; }
+		
+		.Get_sec .Center { padding: 1px 0px 7px 0px;  max-width: 1100px; margin: auto; overflow: hidden; text-align: center; }
+		/* Added by Henry on 1/5/2017*/
+		.Get_sec .MidLink p { font-size: 20px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; text-align:center;color: #000; padding: 0px; margin: 0px 0px 25px 0px;  }
+		.Get_sec .MidLink a { font-size: 20px; font-weight: 400; text-decoration:underline ; color: #0000FF; }
+		.Get_sec .MidLink a:hover { font-size: 20px; font-weight: 400; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; text-decoration:blink; color: black; }
+		
+		.Get_sec .Leftside { width: 48.2%; float: left; }
+		.Get_sec .Leftside fieldset { padding: 0px; margin: 0px; }
+		.Get_sec .Leftside p { font-size: 20px; font-weight:bold; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; color: black;font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; padding: 0px; margin: 0px 0px 25px 0px;  }
+		.Get_sec .Leftside input.field { padding: 18px 20px 17px 20px; font-size: 14px; color: #979797; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; border: 0px; width: 100%; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424;
+		-o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; }
+		.Get_sec .Leftside input:focus { outline: none;}
+		.Get_sec .Leftside textarea { padding: 18px 20px 17px 20px; font-size: 14px; color: #979797; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; border: 0px; width: 100%; height: 156px; resize:none; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; }
+		.Get_sec .Leftside textarea:focus { outline: none;}
+		.Get_sec .Leftside .button { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 700; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 50%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+		.Get_sec .Leftside .button:hover { background: #2d2d2d; color: #fff;}
+		/* <<< Added by Henry on 17/3/2017 >>>  */
+		.Get_sec .Leftside h2 span{ font-size: 40px; color: #979797; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 60px; letter-spacing: -0.4px; }
+		/* <<< Added by Henry on 11/9/2016 >>>  */
+		.Get_sec .Leftside h3 { padding-bottom: 44px; font-size: 46px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 46px; }
+		.Get_sec .Leftside select.dropbtn { padding: 16px; font-size: 16px; border: none; cursor: pointer;}
+		.Get_sec .Leftside select.dropdown { position: relative; display: inline-block;}
+		.Get_sec .Leftside select.dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+		.Get_sec .Leftside select.dropdown-content a { color: black; padding: 12px 16px; text-decoration: none; display: block;}
+		.Get_sec .Leftside select.dropdown-content a:hover {background-color: #f1f1f1}
+		.Get_sec .Leftside select.dropdown:hover .Get_sec .Leftside select.dropdown-content { display: block;}\
+		.Get_sec .Leftside select.dropdown:hover  .Get_sec .Leftside select.dropbtn { background-color: #3e8e41;}
+		/* <<< Added by Henry on 17/9/2016 >>>  */
+		.Get_sec .Leftside .SmallButton { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 700; text-align: center; background: 139346; border: 0px; text-transform:uppercase; width: 30%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+		.Get_sec .Leftside  a { font-size: 20px; font-weight: 400; text-decoration:blink ; color: black; }
+		/* Hidden by Henry on 5 Jan 2017
+		.Get_sec .Leftside a { font-size: 20px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; color: #FF0000;font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; padding: 0px; margin: 25px 25px 25px 0px;  }
+		*/
+		/* End of Added */
+		.Get_sec .Mid .Leftside h2 span{ padding: 24px 0px 35px 0px; font-size: 30px; color: #000; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; line-height: 25px; font-weight: 400; }
+		.Get_sec .Mid .Leftside .SmallButton { -webkit-appearance: none; padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 700; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 30%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+				
+		.Get_sec .Rightside { padding-top: 12px; width: 48.18%; float: right;}
+		.Get_sec .Rightside h3 { padding-bottom: 44px; font-size: 46px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; text-transform:uppercase; line-height: 46px; }
+		.Get_sec .Rightside address { padding: 0px 0px 27px 65px; margin-left: 3px; font-size: 14px; color: black; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; font-style: normal; background: url(../img/location-icn.png) left 4px no-repeat; line-height: 24px;  }
+		.Get_sec .Rightside address.Number { background: url(../img/phone-icn.png) left 5px no-repeat; }
+		.Get_sec .Rightside address.Email { margin-left: 4px; background: url(../img/email-icn2.png) left 0px no-repeat; }
+		/* Added by Henry on 5 Jan 2017*/
+		.Get_sec .Rightside address.Email a { text-decoration: none; color: black; }
+		/* Hidden by Henry on 5 Jan 2017
+		.Get_sec .Rightside address.Email a { text-decoration: none; color: #ebedf1; }*/
+		.Get_sec .Rightside address.Email a:Hover { color: #f88e04; }
+		.Get_sec .Rightside address.WhatsApp { margin-left: 4px; background: url(../img/Whatsapp-icn.png) left 0px no-repeat; }
+		/* Added by Henry on 5 Jan 2017*/
+		.Get_sec .Rightside address.WhatsApp a { text-decoration: none; color: black; }
+		/* Hidden by Henry on 5 Jan 2017
+		.Get_sec .Rightside address.WhatsApp a { text-decoration: none; color: #ebedf1; } */
+		.Get_sec .Rightside address.WhatsApp a:Hover { color: #f88e04; }
+		.Get_sec .Rightside address.Facebook { margin-left: 4px; background: url(../img/facebook-icn.png) left 0px no-repeat; }
+		/* Added by Henry on 5 Jan 2017*/
+		.Get_sec .Rightside address.Facebook a { text-decoration: none; color: black; }
+		/* Hidden by Henry on 5 Jan 2017
+		.Get_sec .Rightside address.Facebook a { text-decoration: none; color: #ebedf1; } */
+		.Get_sec .Rightside address.Facebook a:Hover { color: #f88e04; }
+		
+		.Get_sec .Rightside ul { list-style: none; margin: 0px; padding: 27px 0px 0px 3px; }
+		.Get_sec .Rightside li { float: left; padding: 0px; margin: 0px  22px 0px 0px; }
+		.Get_sec .Rightside li a { text-decoration: none; }
+		/* <<< Added by Henry on 11/9/2016 >>>  */
+		.Get_sec .Rightside .smallButton { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 700; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 30%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+		.Get_sec .Rightside .redButton { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 700; text-align: center; background: #FF0000; border: 0px; text-transform:uppercase; width: 30%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+		.Get_sec .Rightside .Description { font-size: 20px; padding: 0px; margin: 0px 0px 25px 0px;  }
+		
+		/* <<< Added by Henry on 3/4/2017 >>>  */
+		.Get_sec .Rightside p { font-size: 20px; font-weight:bold; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; color: black;font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; padding: 0px; margin: 0px 0px 25px 0px;  }
+		
+		/* <<< Added by Henry on 17/9/2016 >>>  */
+		.Get_sec .Rightside input.field { padding: 18px 20px 17px 20px; font-size: 14px; color: #979797; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; border: 0px; width: 100%; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424;
+		-o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; }
+		.Get_sec .Rightside input:focus { outline: none;}
+		.Get_sec .Rightside textarea { padding: 18px 20px 17px 20px; font-size: 14px; color: #979797; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; border: 0px; width: 100%; height: 156px; resize:none; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; }
+		.Get_sec .Rightside textarea:focus { outline: none;}
+		.Get_sec .Rightside .button { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 700; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 100%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+		
+		
+		/* <<< Purchase Section >>> */
+		.Purchase_sec { width: 100%; overflow: hidden; background: url(../img/background.jpg) top center no-repeat; background-size: cover; }
+		.Purchase_sec .Mid { padding: 76px 0px 95px 0px; max-width: 1100px; margin: auto; overflow: hidden; }
+		.Purchase_sec .Mid .SmallButton { padding: 5px 0px 5px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 700; text-align: center; background: 139346; border: 0px; text-transform:uppercase; width: 10%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+		.Purchase_sec .Mid input.smallField { padding: 8px 20px 8px 20px; font-size: 14px; color: #979797; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; border: 0px; width: 40%; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424;
+		-o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; }
+		.Purchase_sec .Mid h2 { padding-bottom: 44px; font-size: 40px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 46px; }
+		.Purchase_sec .Mid h2 span{ font-size: 20px; color: black; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 60px; letter-spacing: -0.4px; }
+		.Purchase_sec .Mid h3 { font-size: 40px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 46px; }
+		.Purchase_sec .Mid p { font-size: 20px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; color: #000; padding: 0px; margin: 0px 0px 25px 0px;  }
+		.Purchase_sec .Mid ul { font-size: 20px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; color: #FFFFFF; }
+		.Purchase_sec .Mid a { font-size: 20px; font-weight: 400; text-decoration:underline ; color: #0000FF; }
+		.Purchase_sec .Mid a:hover { font-size: 20px; font-weight: 400; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; text-decoration:blink; color: black; }
+		.Purchase_sec .Center { max-width: 1100px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; margin: auto; overflow: hidden; text-align: center; }
+		.Purchase_sec .MidLink p { font-size: 20px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; text-align:center;color: #000; padding: 0px; margin: 0px 0px 25px 0px;  }
+		.Purchase_sec .MidLink a { font-size: 20px; font-weight: 400; text-decoration:underline ; color: #0000FF; }
+		.Purchase_sec .MidLink a:hover { font-size: 20px; font-weight: 400; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; text-decoration:blink; color: black; }
+		.Purchase_sec .Tabside { padding: 10px 0px; width: 100%;}
+    	.Purchase_sec .Tabside ul { list-style: none; margin: 0px; padding-bottom: 39px; }
+    	.Purchase_sec .Tabside li { float: none; margin: 0px -2px; display: inline-block;}
+    	.Purchase_sec .Tabside li a { padding: 14px 40px 13px 40px; font-size: 18px; color: #989898; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; text-decoration: none; border: solid 1px #d5d5d5; display: block; transition: all 0.3s ease; }
+    	.Purchase_sec .Tabside .tabcontent { float: none; margin: 0px 10px; display: inline-block;}
+    	.Purchase_sec .Tabside li a:hover, .Purchase_sec .Tabside li a.activeLink { border: solid 1px #139346; background: #139346; color: #fff;}
+    	.Purchase_sec .Tabside .TabImage { width: 43.63%; float: left; position: relative; }
+		.Purchase_sec .Leftside { width: 48.2%; float: left; }
+		.Purchase_sec .Leftside fieldset { padding: 0px; margin: 0px; }
+		.Purchase_sec .Leftside p { font-size: 20px; font-weight:bold; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; color: black;font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; padding: 0px; margin: 0px 0px 25px 0px;  }
+		.Purchase_sec .Leftside input.field { padding: 18px 20px 17px 20px; font-size: 14px; color: #979797; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; border: 0px; width: 100%; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424;
+		-o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; }
+		.Purchase_sec .Leftside input:focus { outline: none;}
+		.Purchase_sec .Leftside textarea { padding: 18px 20px 17px 20px; font-size: 14px; color: #979797; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; border: 0px; width: 100%; height: 156px; resize:none; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; }
+		.Purchase_sec .Leftside textarea:focus { outline: none;}
+		.Purchase_sec .Leftside .button { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 700; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 50%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+		.Purchase_sec .Leftside .button:hover { background: #2d2d2d; color: #fff;}
+		.Purchase_sec .Leftside h2 span{ font-size: 40px; color: #979797; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; text-transform: uppercase; line-height: 60px; letter-spacing: -0.4px; }
+		.Purchase_sec .Leftside h3 { padding-bottom: 44px; font-size: 46px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; text-transform:uppercase; line-height: 46px; }
+		.Purchase_sec .Leftside select.dropbtn { padding: 16px; font-size: 16px; border: none; cursor: pointer;}
+		.Purchase_sec .Leftside select.dropdown { position: relative; display: inline-block;}
+		.Purchase_sec .Leftside select.dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+		.Purchase_sec .Leftside select.dropdown-content a { color: black; padding: 12px 16px; text-decoration: none; display: block;}
+		.Purchase_sec .Leftside select.dropdown-content a:hover {background-color: #f1f1f1}
+		.Purchase_sec .Leftside select.dropdown:hover .Purchase_sec .Leftside select.dropdown-content { display: block;}\
+		.Purchase_sec .Leftside select.dropdown:hover  .Purchase_sec .Leftside select.dropbtn { background-color: #3e8e41;}
+		.Purchase_sec .Leftside .SmallButton { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 700; text-align: center; background: 139346; border: 0px; text-transform:uppercase; width: 30%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+		.Purchase_sec .Leftside  a { font-size: 20px; font-weight: 400; text-decoration:blink ; color: black; }
+		.Purchase_sec .Mid .Leftside h2 span{ padding: 24px 0px 35px 0px; font-size: 30px; color: #000; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; line-height: 25px; font-weight: 400; }
+		.Purchase_sec .Mid .Leftside .SmallButton { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 700; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 30%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+		.Purchase_sec .Rightside { padding-top: 12px; width: 48.18%; float: right;}
+		.Purchase_sec .Rightside h3 { padding-bottom: 44px; font-size: 46px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; text-transform:uppercase; line-height: 46px; }
+		.Purchase_sec .Rightside address { padding: 0px 0px 27px 65px; margin-left: 3px; font-size: 14px; color: black; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; font-style: normal; background: url(../img/location-icn.png) left 4px no-repeat; line-height: 24px;  }
+		.Purchase_sec .Rightside address.Number { background: url(../img/phone-icn.png) left 5px no-repeat; }
+		.Purchase_sec .Rightside address.Email { margin-left: 4px; background: url(../img/email-icn2.png) left 0px no-repeat; }
+		.Purchase_sec .Rightside address.Email a { text-decoration: none; color: black; }
+		.Purchase_sec .Rightside address.Email a:Hover { color: #f88e04; }
+		.Purchase_sec .Rightside address.WhatsApp { margin-left: 4px; background: url(../img/Whatsapp-icn.png) left 0px no-repeat; }
+		.Purchase_sec .Rightside address.WhatsApp a { text-decoration: none; color: black; }
+		.Purchase_sec .Rightside address.WhatsApp a:Hover { color: #f88e04; }
+		.Purchase_sec .Rightside address.Facebook { margin-left: 4px; background: url(../img/facebook-icn.png) left 0px no-repeat; }
+		.Purchase_sec .Rightside address.Facebook a { text-decoration: none; color: black; }
+		.Purchase_sec .Rightside address.Facebook a:Hover { color: #f88e04; }
+		.Purchase_sec .Rightside ul { list-style: none; margin: 0px; padding: 27px 0px 0px 3px; }
+		.Purchase_sec .Rightside li { float: left; padding: 0px; margin: 0px  22px 0px 0px; }
+		.Purchase_sec .Rightside li a { text-decoration: none; }
+		.Purchase_sec .Rightside .smallButton { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 700; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 30%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+		.Purchase_sec .Rightside .redButton { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 700; text-align: center; background: #FF0000; border: 0px; text-transform:uppercase; width: 30%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+		.Purchase_sec .Rightside .Description { font-size: 20px; padding: 0px; margin: 0px 0px 25px 0px;  }
+		.Purchase_sec .Rightside p { font-size: 20px; font-weight:bold; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; color: black;font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; padding: 0px; margin: 0px 0px 25px 0px;  }
+		.Purchase_sec .Rightside input.field { padding: 18px 20px 17px 20px; font-size: 14px; color: #979797; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; border: 0px; width: 100%; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424;
+		-o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; }
+		.Purchase_sec .Rightside input:focus { outline: none;}
+		.Purchase_sec .Rightside textarea { padding: 18px 20px 17px 20px; font-size: 14px; color: #979797; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; border: 0px; width: 100%; height: 156px; resize:none; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; }
+		.Purchase_sec .Rightside textarea:focus { outline: none;}
+		.Purchase_sec .Rightside .button { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 700; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 100%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+
+		/* <<< Added by Henry on 8/3/2017 >>>  */
+		.Step_sec { width: 100%; overflow: hidden; background: url(../img/background.jpg) top center no-repeat; background-size: cover; }
+		.Step_sec .Contactside { background: url(../img/background.jpg) top center no-repeat; background-size: cover; overflow: hidden;}
+		.Step_sec .Center { padding: 115px 0px 77px 0px;  max-width: 1100px; margin: auto; overflow: hidden; text-align: center; }
+		.Step_sec h2 { font-size: 57px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; text-transform: uppercase; line-height: 60px;}
+		/*Added by Henry on 17 Sep 2016 */
+		.Step_sec span { padding: 24px 0px 35px 0px; font-size: 30px; color: #000; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; line-height: 25px; font-weight: 400; }
+		.Step_sec p { padding: 24px 0px 35px 0px; font-size: 14px; color: #ebebeb; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; line-height: 25px; font-weight: 400; }
+		.Step_sec .Line { border: solid 1px #139346; height: 2px; width: 252px; margin: auto; }
+		.Step_sec .Pricingside { padding: 30px 0px 10px 0px; width: 100%; overflow: hidden; text-align: initial; }
+		
+		.Guide_sec { width: 100%; overflow: hidden; background: url(../img/background.jpg) top center no-repeat; background-size: cover;  }
+		.Guide_sec .Mid { padding: 76px 0px 95px 0px; max-width: 1100px; margin: auto;  }
+		.Guide_sec .Mid .Button { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 1; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 30%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+		.Guide_sec .Leftside { padding: 92px 0px 0px 0px; width: 35.90%; float: left; overflow: hidden;}
+		
+		.Guide_sec .Leftside fieldset { padding: 0px; margin: 0px; }
+		.Guide_sec .Leftside p { font-size: 20px; font-weight:bold; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; color: black;font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; padding: 0px; margin: 0px 0px 25px 0px;  }
+		.Guide_sec .Leftside input.field { padding: 18px 20px 17px 20px; font-size: 14px; color: #979797; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; border: 0px; width: 100%; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424;
+		-o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; }
+		.Guide_sec .Leftside input:focus { outline: none;}
+		.Guide_sec .Leftside textarea { padding: 18px 20px 17px 20px; font-size: 14px; color: #979797; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; border: 0px; width: 100%; height: 156px; resize:none; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; }
+		.Guide_sec .Leftside textarea:focus { outline: none;}
+		.Guide_sec .Rightside { padding-top: 12px; width: 48.18%; float: right;}
+		/* <<< Added by Henry on 8/3/2017 >>>  */
+		.Guide_sec .Center { max-width: 1100px; margin: auto; overflow: hidden; text-align: center; }
+		
+		/* <<< Connect Section >>> */
+		.Connect_sec  { width: 100%; overflow: hidden; background: url(../img/background.jpg) top center no-repeat; background-size: cover; }
+		.Connect_sec .Mid { padding: 76px 0px 95px 0px; max-width: 1100px; margin: auto; overflow: hidden; }
+		.Connect_sec .Mid h2 { padding-bottom: 44px; font-size: 40px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 20px; line-height: 46px; }
+		.Connect_sec .Mid a { font-size: 40px; font-weight:bold; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif;  text-decoration: underline; color: #0000FF; }
+		.Connect_sec .Mid a:hover { font-size: 40px; font-weight:bold; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; text-decoration:blink; color: #139346; }
+		.Connect_sec .smallButton { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 1; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 15%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+	    .Connect_sec .Mid .Button { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 1; text-align: center; background: #139346; border: 0px; text-transform:uppercase; width: 30%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+	    .Connect_sec .Mid .redButton { padding: 16px 0px 17px 0px; margin-top: -3px; font-size: 14px; color: #e9ecee; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 1; text-align: center; background: red; border: 0px; text-transform:uppercase; width: 30%; cursor: pointer; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424; -o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; transition: all 0.3s ease;}
+		
+		.Connect_sec .MidLink a { font-size: 20px; font-weight: 400; text-decoration:underline ; color: #0000FF; }
+		.Connect_sec .MidLink a:hover { font-size: 20px; font-weight: 400; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; text-decoration:blink; color: black; }
+		
+		.Connect_sec .Mid p { text-align:center; font-size: 20px; font-weight:bold; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; color: black;font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; padding: 0px; margin: 0px 0px 25px 0px;  }
+		.Connect_sec .Mid input.smallField { padding: 8px 20px 8px 20px; font-size: 14px; color: #979797; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; border: 0px; width: 50%; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424;
+		-o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; }
+		.Connect_sec .Leftside { width: 48.2%; float: left; }
+		.Connect_sec .Leftside fieldset { padding: 0px; margin: 0px; }
+		.Connect_sec .Leftside input.field { padding: 18px 20px 17px 20px; font-size: 14px; color: #979797; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; border: 0px; width: 100%; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424;
+		-o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; }
+		.Connect_sec th, td { text-align: center; font-size: 20px; font-weight:bold; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; color: black;font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; padding: 0px; margin: 0px 0px 25px 0px;  }
+		.Connect_sec figure { text-align: center; font-size: 20px; font-weight:bold; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; color: black;font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; padding: 0px; margin: 0px 0px 25px 0px;  }
+
+		.Connect_sec .Rightside { padding-top: 12px; width: 48.18%; float: right;}
+		.Connect_sec .Rightside input.field { padding: 18px 20px 17px 20px; font-size: 14px; color: #979797; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; font-weight: 400; border: 0px; width: 100%; box-shadow: 0px 2px 6px 0px #242424; -webkit-box-shadow: 0px 2px 6px 0px #242424; -moz-box-shadow: 0px 2px 6px 0px #242424;
+		-o-box-shadow: 0px 2px 6px 0px #242424; border-radius: 0px; }
+
+		.Connect_sec .table, th, td { border: 2px solid black;}
+		.Connect_sec img{ display: inline-block;} 
+
+		
+		/* <<< footer >>> */
+		footer { overflow: hidden; width: 100%; text-align: center; background: rgba(0, 0, 0, 0.6); }
+		footer .Cntr { padding:  28px 0px; max-width: 1100px; margin: auto;}
+		footer .Cntr p { padding: 0px; font-size: 13px; color: #a9abad; font-family:'helvetica', 'Microsoft JhengHei'; margin: 0px; }
+		footer .Cntr a { color: #a9abad; text-decoration: none; }
+		footer .Cntr a:hover { color: #fff; }
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   #loader-wrapper { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000; }
+   #loader { display: block; position: relative; left: 50%; top: 50%; width: 150px; height: 150px; margin: -75px 0 0 -75px; border-radius: 50%; border: 3px solid transparent; border-top-color: #3498db; -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+   	animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */ z-index: 1001; }
+   	#loader:before { content: ""; position: absolute; top: 5px; left: 5px; right: 5px; bottom: 5px; border-radius: 50%; border: 3px solid transparent;
+   	border-top-color: #e74c3c; -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+   animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */ }
+   #loader:after { content: ""; position: absolute; top: 15px; left: 15px; right: 15px; bottom: 15px; border-radius: 50%; border: 3px solid transparent;
+border-top-color: #f9c922; -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */ }
+
+@-webkit-keyframes spin {
+	0%   { 
+		-webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */  /* IE 9 */
+		transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+	}
+	100% {
+		-webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */  /* IE 9 */
+		transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+	}
+}
+@keyframes spin {
+	0%   { 
+		-webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */  /* IE 9 */
+		transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+	}
+	100% {
+		-webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */  /* IE 9 */
+		transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+	}
+}
+
+#loader-wrapper .loader-section { position: fixed; top: 0; width: 51%; height: 100%; background: #222222; z-index: 1000; -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */  /* IE 9 */ transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */}
+
+#loader-wrapper .loader-section.section-left {
+	left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+	right: 0;
+}
+
+/* Loaded */
+.loaded #loader-wrapper .loader-section.section-left {
+	-webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */  /* IE 9 */
+	transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */  
+	transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+	-webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */  /* IE 9 */
+	transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */  
+	transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader {
+	opacity: 0;  
+	transition: all 0.3s ease-out;
+}
+.loaded #loader-wrapper {
+	visibility: hidden;
+
+	-webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */  /* IE 9 */
+	transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */  
+	transition: all 0.3s 1s ease-out;
+}
+
+/* JavaScript Turned Off */
+.no-js #loader-wrapper {
+	display: none;
+}
