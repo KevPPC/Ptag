@@ -54,11 +54,25 @@
         .Bar{
           background-color: black;
          }
-         .HowToUse_sec{
-          background-color: #E6EEFD ;
-         }
+         
+         .feature:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+    }
        
-       
+
+
+    /* Remove all outlines for focused elements */
+    *:focus {
+        outline: none !important;
+    }
+
+    /* Ensure no borders or outlines are applied to the image or container */
+    #Container, .HowToUse_sec, img {
+        border: none;
+        outline: none;
+    }
+
+
 
 
     body {
@@ -77,40 +91,7 @@
         margin-bottom: 40px;
         color: #333;
     }
-    .features {
-        display: flex; /* Use flexbox to arrange items horizontally */
-        justify-content: space-between; /* Space items evenly */
-        flex-wrap: nowrap; /* Prevent wrapping */
-        gap: 24px; /* Set gap between items */
-    }
-    .feature {
-        background-color: white;
-        border-radius: 24px; 
-        padding: 32px; 
-        
-        width: 244px; 
-        height: 261px; 
-        text-align: center;
-        transition: transform 0.2s; 
-    }
-    .feature:hover {
-        transform: scale(1.05); /* Slightly enlarge on hover */
-    }
-    .feature img {
-        width: 60px; /* Adjust icon size */
-        height: 60px; /* Adjust icon size */
-        margin-bottom: 15px;
-    }
-    .feature h2 {
-        font-size: 1.2em; /* Adjust heading size for prominence */
-        margin: 10px 0;
-        font-weight: bold; /* Make the heading bold */
-    }
-    .feature p {
-        margin: 0;
-        font-size: 0.9em; /* Adjust font size for better readability */
-        color: #666;
-    }
+    
 
     body {
       font-family: Arial, sans-serif;
@@ -148,71 +129,11 @@
       align-items: center;
     }
 
-    .supporters {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      width: 50%;
-    }
 
-    .supporter-card {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+    
 
-    .supporter-card img {
-      max-width: 100px;
-      height: auto;
-      margin-bottom: 10px;
-    }
 
-    .supporter-card p {
-      font-size: 14px;
-      color: #333;
-      margin: 0;
-    }
-
-    .partners {
-      position: relative;
-      width: 50%;
-    }
-
-    .circle {
-      position: relative;
-      width: 300px;
-      height: 300px;
-      margin: 0 auto;
-      border: 2px dashed #ddd;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .circle img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    .partner-logo {
-      position: absolute;
-    }
-
-    .partner-logo img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-  
-
+   
 	</style>
     
 	<!--script src="/js/jquery-2.1.4.js"></script-->
@@ -310,77 +231,44 @@
         
          <!--div class="bgcolor"></div-->
         <!-- \\ Begin Container \\ -->
-        <div id="Container">
+        <div id="Container" style="height: 100vh; overflow: hidden; border: none; outline: none;">
             <!-- \\ Begin About Section \\ -->
-            <div class="HowToUse_sec" id="about">
-                <div class="Center">            
-                  <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 20px;">
-                    <span style="color: #000000; font-weight: bold;">PTag </span>
-                    <span style="color: #65A8FB; font-weight: bold;">Air</span>
-                </h2>
-                <p style="text-align: center; font-size: 1.2em; color: black; line-height: 1.6;">
-                    • 僅重 3 克，輕巧如羽，是一般寵物牌重量的五分之一。<br>
-                    • 舒適貼合，讓愛寵自在活動。<br>
-                    • 耐用塑膠材質，免除氧化困擾。<br>
-                    • 內建 QR Code 及寵物照片，走失即時定位。<br>
-                    • 更搭載 PHealth 智慧健康管理，輕鬆守護愛寵健康。
-                </p>
-                </div>
+            <div class="HowToUse_sec" id="about" style="position: relative; height: 100%; border: none; outline: none;">
+                <img src="img/P2.png" alt="Ptag Air" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; border: none; outline: none;">
             </div>
+        </div>
+        
         <!-- // End Services Section // -->		
 
 <!-- \\ Begin AI Eye Disease Check Section \\ -->
-<div class="HowToUse_sec" id="eye-check" style="background-color: #E6EEFD;">
-  <div class="Center">
-    <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 20px; color: #000000; font-weight: bold; background-color: #E6EEFD;">
-      為何有 AI 眼疾病查？
-    </h2>
-    <p style="text-align: center; font-size: 1.2em; color: black; line-height: 1.6; background-color: #E6EEFD;">
-      智能科技的快速進步使得眼病的診斷變得更加精確。<br>
-      這項技術不僅能夠提高診斷的準確性，還要求專業人士一同參與以確保診斷的正確性。<br>
-      PTag 的 AI 眼疾病查詢，只需簡單的檢測過程，立即獲得健康報告，讓您輕鬆掌握健康狀態。
-    </p>
-    <p style="font-size: 16px; background-color: #E6EEFD;">**此健康篩查及建議僅供參考，無法替代專業獸醫意見。請諮詢您的主診獸醫**</p>
-  </div>
+<div class="HowToUse_sec" id="eye-check" style="position: relative; height: 100vh; overflow: hidden;">
+    <img src="img/P3.png" alt="AI Eye Disease Check" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
 </div>
-<!-- // End AI Eye Disease Check Section // -->
-
-
-
-
+  <!-- // End AI Eye Disease Check Section // -->
 </style>
 <div class="container">
-  <h1 style="color: #050505; font-size: 64px; font-weight: bold;">
-    PTag <span style="color: #65A8FB; font-weight: bold;">Air 五</span>大功能
-</h1>
-  <div class="features">
-      <div class="feature">
-          <img src="img/Group 9422.png" alt="Feature 1">
-          <h2>特別設計</h2>
-          <p>PTag Air 具備 QR Code 功能，方便您隨時使用。</p>
-      </div>
-      <div class="feature">
-          <img src="img/Group 9423.png" alt="Feature 2">
-          <h2>安全資訊</h2>
-          <p>所有資料均為加密保存，保障您的隱私。</p>
-      </div>
-      <div class="feature">
-          <img src="img/Group 9424.png" alt="Feature 3">
-          <h2>自訂圖片</h2>
-          <p>可上載您喜愛的圖片，個性化您的 PTag。</p>
-      </div>
-      <div class="feature">
-          <img src="img/Group 9425.png" alt="Feature 4">
-          <h2>社交媒體連結</h2>
-          <p>連結 Facebook 和 Instagram，輕鬆分享。</p>
-      </div>
-      <div class="feature">
-          <img src="img/Group 9426.png" alt="Feature 5">
-          <h2>即時更新</h2>
-          <p>隨時更新您的信息，保持最新狀態。</p>
-      </div>
+    <h1 style="color: #050505; font-size: 64px; font-weight: bold;">
+      PTag <span style="color: #65A8FB; font-weight: bold;">Air 五</span>大功能
+    </h1>
+    <div class="features" style="display: flex; justify-content: space-between; gap: 36px;">
+        <div class="feature" style="width: 244px; height: 261px;">
+            <img src="img/Frame 37553.png" alt="Picture 1" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="feature" style="width: 244px; height: 261px;">
+            <img src="img/Frame 37559.png" alt="Picture 2" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="feature" style="width: 244px; height: 261px;">
+            <img src="img/Frame 37561 (1).png" alt="Picture 3" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="feature" style="width: 244px; height: 261px;">
+            <img src="img/Frame 37562.png" alt="Picture 4" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="feature" style="width: 244px; height: 261px;">
+            <img src="img/Frame 37563.png" alt="Picture 5" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+    </div>
   </div>
-</div>
+ 
 
 
 <!-- // End Contact Section // -->
