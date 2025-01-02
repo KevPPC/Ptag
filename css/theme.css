@@ -110,7 +110,7 @@ header.smaller .Navigation li { height: 60px; }
 
 /* <<< Banner Section >>> */
 /*Edit by Henry on 2 Jan 2017*/
-.Banner_sec { width: 100%; background: url(../img/PTag.jpg) top center no-repeat; height: 1007px; position: relative; background-size: cover; }
+.Banner_sec { width: 100%; background: url(/img/Ptag.jpg) top center no-repeat; height: 1007px; position: relative; background-size: cover; }
 .Banner_sec .bannerside { width: 100%; position: absolute; top: 256px; left: 0px; }
 .Banner_sec .Center { max-width: 1100px; margin: auto; }
 /*Added by Henry on 2 Jan 2017*/
@@ -344,6 +344,57 @@ header.smaller .Navigation li { height: 60px; }
 	
 	/* <<< Container >>> */
 	#Container { overflow: hidden; width: 100%; }
+	body {
+        font-family: Arial, sans-serif;
+        background-color: #F7F7F7;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1920px; /* Adjust max-width for overall layout */
+    }
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 40px;
+        color: #333;
+    }
+    .features {
+        display: flex; /* Use flexbox to arrange items horizontally */
+        justify-content: space-between; /* Space items evenly */
+        flex-wrap: nowrap; /* Prevent wrapping */
+        gap: 24px; /* Set gap between items */
+    }
+    .feature {
+        background-color: white;
+        
+        padding: 32px; 
+        
+        width: 244px; 
+        height: 261px; 
+        text-align: center;
+        transition: transform 0.2s; 
+    }
+    .feature:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+    }
+    .feature img {
+        width: 60px; /* Adjust icon size */
+        height: 60px; /* Adjust icon size */
+        margin-bottom: 15px;
+    }
+    .feature h2 {
+        font-size: 1.2em; /* Adjust heading size for prominence */
+        margin: 10px 0;
+        font-weight: bold; /* Make the heading bold */
+    }
+    .feature p {
+        margin: 0;
+        font-size: 0.9em; /* Adjust font size for better readability */
+        color: #666;
+    }
+	
 
 	/* <<< About Section >>> */
 	/*Added by Henry on 2 Jan 2017*/
@@ -503,20 +554,43 @@ header.smaller .Navigation li { height: 60px; }
 		}
 	
 	/* Added by Henry on 15 Jan 2017*/
-	.Services_sec .Tabside .Description.Center h3 { max-width: 1100px; margin: auto; overflow: hidden; text-align: center; }
+	.Services_sec .Tabside .Description.Center h3 { max-width: 1100px; margin: auto; overflow: hidden; text-align: center; font-weight: 400; size: 24px; }
 
 	.Services_sec .Tabside .Description p { padding: 21px 0px 4px 0px; font-size: 22px; color: black; margin: 0px; font-family:'helvetica', 'Microsoft JhengHei'; line-height: 25px; }
 	.Services_sec .Tabside .Description p .cyan { font-size: 16px; color: #08c2ff; }
 	
 	/* Added by Henry on 24 May 2017*/
-	.HowToUse_sec{ padding: 114px 0px 90px 0px ; width: 100%; overflow: hidden; background: url(../img/background.jpg) top center no-repeat; background-size: cover; }
-	.HowToUse_sec .Center { max-width: 850px; margin: auto; overflow: hidden; text-align: center; }
+	.HowToUse_sec {
+		padding: 114px 0px 90px 0px;
+		width: 100%;
+		overflow: auto; /* Changed from hidden to auto */
+		background-color: #F5F5F5;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-width: 8px 0px 8px 0px; /* Border width */
+		border-style: none;            /* Border style */
+		border-color: #000000;         /* Border color */
+		box-sizing: border-box;        /* Ensures padding and borders are included in the width/height */
+	}
+	
+	.HowToUse_sec .Center {
+		max-width: 850px;
+		margin: auto;
+		overflow: visible; 
+		text-align: center;
+		position: relative; /* Added for positioning context */
+		z-index: 10;       /* Added to ensure it appears above other elements if needed */
+		border-style: dashed;            /* Border style */
+		border-color: #000000;         /* Border color */
+		box-sizing: border-box;        
+	}
 	/*Added by Henry on 5 Jan 2017 */
 	.HowToUse_sec h2 { font-size: 45px; color: #139346; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; line-height: 60px; letter-spacing: -0.4px; }
 	.HowToUse_sec h2 span{ font-size: 20px; color: #979797; font-family: 'helvetica','Microsoft JhengHei', sans-serif; font-weight: 400; margin: 0px; text-transform: uppercase; line-height: 60px; letter-spacing: -0.4px; }
 	.HowToUse_sec a { font-size: 20px; font-weight: 400; text-decoration:underline ; color: #0000FF; }
 	.HowToUse_sec a:hover { font-size: 20px; font-weight: 400; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; text-decoration:blink; color: black; }
-	.HowToUse_sec p { padding: 25px 0px 35px 0px; font-size: 22px; color: #d8dfe5; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; line-height: 25px; font-weight: 400; }
+	.HowToUse_sec p { padding: 25px 0px 35px 0px; font-size: 24px; color: #d8dfe5; margin: 0px; font-family: 'helvetica', 'Microsoft JhengHei', sans-serif; line-height: 60px; font-weight: 400;  }
 	.HowToUse_sec .Line { border: solid 1px #139346; height: 2px; width: 252px; margin: auto; }
 	.HowToUse_sec .Serviceside { padding: 76px 0px 30px 0px; width: 100%; overflow: hidden; }
 	.HowToUse_sec .Serviceside ul { list-style: none; margin: 0px }
